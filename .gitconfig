@@ -1,0 +1,14 @@
+[user]
+	name = Fernando Almeida
+	email = fernando@fernandoalmeida.net
+[color]
+	ui = auto
+[alias]
+	st = status -s
+	ci = commit
+	cim = commit -m
+	co = checkout
+	ll = log --oneline
+	br = branch
+[core]
+	excludesfile = /home/fernando/.gitignore_global
