@@ -1,0 +1,30 @@
+# .bashrc aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias l='ls -CF'
+
+alias emacss='emacs &'
+
+alias b='bundle'
+alias bi='bundle install'
+alias bu='bundle update'
+alias bo='bundle open'
+alias be='bundle exec'
+alias beg='bundle exec guard'
+alias bep='bundle exec puma'
+alias beu='bundle exec unicorn'
+alias berdm='bundle exec rake db:migrate'
+alias berdmv0='bundle exec rake db:migrate VERSION=0'
+alias berdr='bundle exec rake db:rollback'
+
+alias rs='rails server'
+alias rg='rails generate'
+alias rgm='rails generate migration'
+alias rgs='rails generate scaffold'
+
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
