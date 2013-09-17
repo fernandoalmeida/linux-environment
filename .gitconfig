@@ -10,5 +10,8 @@
 	co = checkout
 	ll = log --oneline
 	br = branch
+	difff = diff --cached
 [core]
 	excludesfile = /home/fernando/.gitignore_global
+[push]
+	default = matching

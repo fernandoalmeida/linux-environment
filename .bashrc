@@ -111,18 +111,40 @@ if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
 
 fi
 
-JAVA_HOME=$HOME/trabalho/programas/linux/java/jdk1.6.0_35
-ANDROID_SDK_HOME=$HOME/trabalho/programas/linux/android-sdk/android-sdk-linux
-ANDROID_NDK_HOME=$HOME/trabalho/programas/linux/android-sdk/android-ndk-r8b
-ANDROID_HOME=$ANDROID_SDK_HOME:$ANDROID_NDK_HOME
-ECLIPSE_HOME=$HOME/trabalho/programas/linux/eclipse/eclipse
-PATH=$JAVA_HOME/bin:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools:$PATH:$HOME/.rvm/bin:$ECLIPSE_HOME
-export JAVA_HOME ANDROID_SDK_HOME ANDROID_NDK_HOME ANDROID_HOME ECLIPSE_HOME PATH
+# Java + Android SDK/Studio
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
+ANDROID_STUDIO_HOME=$HOME/trabalho/programas/linux/android_studio/android-studio
+ANDROID_SDK_HOME=$ANDROID_STUDIO_HOME/sdk
+ANDROID_NDK_HOME=$ANDROID_STUDIO_HOME/ndk
+ANDROID_HOME=$ANDROID_SDK_HOME
+PATH=$JAVA_HOME/bin:$ANDROID_STUDIO_HOME/bin:$ANDROID_SDK_HOME/tools:$ANDROID_SDK_HOME/platform-tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export JAVA_HOME ANDROID_STUDIO_HOME ANDROID_SDK_HOME ANDROID_NDK_HOME ANDROID_HOME PATH
 
-export PERL_LOCAL_LIB_ROOT="/home/fernando/perl5";
-export PERL_MB_OPT="--install_base /home/fernando/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/fernando/perl5";
-export PERL5LIB="/home/fernando/perl5/lib/perl5/i686-linux-gnu-thread-multi-64int:/home/fernando/perl5/lib/perl5";
-export PATH="/home/fernando/perl5/bin:$PATH";
+# Perl
+# export PERL_LOCAL_LIB_ROOT="/home/fernando/perl5";
+# export PERL_MB_OPT="--install_base /home/fernando/perl5";
+# export PERL_MM_OPT="INSTALL_BASE=/home/fernando/perl5";
+# export PERL5LIB="/home/fernando/perl5/lib/perl5/i686-linux-gnu-thread-multi-64int:/home/fernando/perl5/lib/perl5";
+# export PATH="/home/fernando/perl5/bin:$PATH";
 
 export BUNDLER_EDITOR="nautilus"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="/home/fernando/.rbenv/shims:${PATH}"
+source "/home/fernando/.rbenv/libexec/../completions/rbenv.bash"
+rbenv rehash 2>/dev/null
+rbenv() {
+  typeset command
+  command="$1"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "`rbenv "sh-$command" "$@"`";;
+  *)
+    command rbenv "$command" "$@";;
+  esac
+}
