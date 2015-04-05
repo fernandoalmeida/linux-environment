@@ -1,4 +1,3 @@
-dotfiles
-========
+# linux-environment
 
-Config files for linux environment
+Scripts to my Linux environment configuration
