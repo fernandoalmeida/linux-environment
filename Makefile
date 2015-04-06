@@ -8,6 +8,8 @@ $(SCRIPTS):
 	. install/$@
 	@touch $(TMP)/$@
 
+ruby: git
+
 clean:
 	@rm -fr $(TMP)/*[!.gitkeep]
 
