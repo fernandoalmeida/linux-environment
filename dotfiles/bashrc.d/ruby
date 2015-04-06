@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="${RBENV_ROOT}/.rbenv/shims:${RBENV_ROOT}/bin:${PATH}"
+
+source "${RBENV_ROOT}/completions/rbenv.bash"
+eval "$(rbenv init -)"
+rbenv rehash 2>/dev/null
+
+export BUNDLER_EDITOR="nautilus"
+
+alias b='bundle'
+alias bi='bundle install'
+alias be='bundle exec'
+alias berdm='bundle exec rake db:migrate'
+alias berdmv0='bundle exec rake db:migrate VERSION=0'
+alias berdr='bundle exec rake db:rollback'
+
+alias ctags_ruby='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems .'
+alias ctags_bundler='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
