@@ -2,7 +2,7 @@ TMP := tmp
 VPATH := $(TMP)
 SCRIPTS := $(shell ls install)
 
-all: $(SCRIPTS)
+install: $(SCRIPTS)
 
 $(SCRIPTS):
 	. install/$@
@@ -11,4 +11,4 @@ $(SCRIPTS):
 clean:
 	@rm -fr $(TMP)/*[!.gitkeep]
 
-.PHONY: clean all
+.PHONY: clean install
