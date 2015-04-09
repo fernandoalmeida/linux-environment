@@ -1,20 +1,29 @@
 # linux-environment
 
-My Linux environment configuration scripts
+This repo started out with just my dotfiles, but someday I changed to
+include configuration scripts of my development environment (packages,
+libs, editor, etc).
+
+I created a Makefile to define configuration targets and dependencies
+beteween them.
+
+I also created a Dockerfile to test them always in a clean
+environment.
 
 ## Usage
 
-### In your local machine
+### In a local machine
 
-To install/configure an specific target use
+To install/configure all from scratch
+
+	make install
+
+To install/configure specific targets
 
     make git
     make ruby
-    # etc
-
-To install/configure all targets use
-
-    make install
+	make emacs
+	# ...
 
 ### In a Docker container
 
