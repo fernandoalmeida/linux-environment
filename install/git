@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install git-core --yes --force-yes
+sudo apt-get install git-core --yes --force-yes -qq
 
 mkdir -p $HOME/.bashrc.d/
 ln -sfn $(pwd)/dotfiles/bashrc $HOME/.bashrc

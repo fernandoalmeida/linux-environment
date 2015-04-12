@@ -18,7 +18,7 @@ packages="
     openssl
 "
 
-sudo apt-get install $packages --yes --force-yes
+sudo apt-get install $packages --yes --force-yes -qq
 
 git clone git://github.com/sstephenson/rbenv.git $RBENV_ROOT
 git clone git://github.com/sstephenson/ruby-build.git $RBENV_ROOT/plugins/ruby-build
