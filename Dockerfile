@@ -1,11 +1,12 @@
-FROM ubuntu:14.10
+FROM debian:7
 MAINTAINER Fernando Almeida
 
 RUN apt-get update -qq
-RUN apt-get install make wget --yes --force-yes
+RUN apt-get install -qq --yes --force-yes \
+    	    	    make wget build-essential sudo
 
 ENV RUNTIME_USER fernando
-RUN adduser $RUNTIME_USER && adduser $RUNTIME_USER sudo
+RUN useradd -G sudo $RUNTIME_USER
 RUN echo "$RUNTIME_USER ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 USER $RUNTIME_USER
 
