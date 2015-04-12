@@ -2,7 +2,7 @@ FROM ubuntu:14.10
 MAINTAINER Fernando Almeida
 
 RUN apt-get update -qq
-RUN apt-get install make
+RUN apt-get install make wget --yes --force-yes
 
 ENV RUNTIME_USER fernando
 RUN adduser $RUNTIME_USER && adduser $RUNTIME_USER sudo
@@ -14,3 +14,4 @@ WORKDIR /scripts
 
 RUN sudo make git
 RUN sudo make ruby
+RUN sudo make emacs

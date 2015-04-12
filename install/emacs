@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+: ${EMACS_VERSION:="24.4"}
+: ${TMP:="$(pwd)/tmp"}
+: ${EMACS_DIR:="${TMP}/emacs-${EMACS_VERSION}"}
+
+sudo apt-get build-dep emacs24 --yes
+wget http://ftp.gnu.org/gnu/emacs/emacs-${EMACS_VERSION}.tar.gz -nc -P ${TMP}
+tar -C ${TMP} -zxvf ${TMP}/emacs-${EMACS_VERSION}.tar.gz
+cd ${EMACS_DIR} && ./configure && make && sudo make install
