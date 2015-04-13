@@ -26,8 +26,6 @@ git clone git://github.com/sstephenson/rbenv-gem-rehash.git $RBENV_ROOT/plugins/
 git clone git://github.com/carsomyr/rbenv-bundler.git $RBENV_ROOT/plugins/rbenv-bundler
 git clone git://github.com/jamis/rbenv-gemset.git $RBENV_ROOT/plugins/rbenv-gemset
 
-mkdir -p $HOME/.bashrc.d/
-ln -sfn $(pwd)/dotfiles/bashrc $HOME/.bashrc
 ln -sfn $(pwd)/dotfiles/bashrc.d/ruby $HOME/.bashrc.d/
 
 . $HOME/.bashrc.d/ruby

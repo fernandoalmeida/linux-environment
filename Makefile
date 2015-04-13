@@ -1,15 +1,20 @@
 TMP := tmp
 VPATH := $(TMP)
 SCRIPTS := $(shell ls install)
+.DEFAULT_GOAL := install
 
+# prerequisites mapping
+git: bash
+ruby: bash git
+emacs: bash git
+
+# implicit rules mapped to installation scripts
 install: $(SCRIPTS)
-
 $(SCRIPTS):
 	. install/$@
 	@touch $(TMP)/$@
 
-ruby: git
-
+# Docker rules (helpers)
 build:
 	docker build --rm=false -t fernando/linuxenv .
 
@@ -19,4 +24,4 @@ run:
 clean:
 	@rm -fr $(TMP)/*[!.gitkeep]
 
-.PHONY: clean install
+.PHONY: install build run clean
