@@ -16,6 +16,7 @@ USER $RUNTIME_USER
 COPY . /scripts
 WORKDIR /scripts
 
+RUN sudo make bash
 RUN sudo make git
 RUN sudo make ruby
 RUN sudo make emacs
