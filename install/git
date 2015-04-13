@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash -e
 
 sudo apt-get install git-core --yes --force-yes -qq
 
