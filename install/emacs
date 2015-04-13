@@ -2,12 +2,12 @@
 
 : ${EMACS_VERSION:="24.4"}
 : ${TMP:="$(pwd)/tmp"}
-: ${EMACS_DIR:="${TMP}/emacs-${EMACS_VERSION}"}
+: ${EMACS_DIR:="$TMP/emacs-$EMACS_VERSION"}
 
 sudo apt-get install -qq --yes --force-yes \
     wget build-essential libncurses5 libncurses5-dev
 sudo apt-get build-dep emacs24 --yes --force-yes -qq
 
-wget http://ftp.gnu.org/gnu/emacs/emacs-${EMACS_VERSION}.tar.gz -nc -P ${TMP}
-tar -C ${TMP} -zxvf ${TMP}/emacs-${EMACS_VERSION}.tar.gz
-cd ${EMACS_DIR} && ./configure && make && sudo make install
+wget http://ftp.gnu.org/gnu/emacs/emacs-$EMACS_VERSION.tar.gz -nc -P $TMP
+tar -C $TMP -zxvf $TMP/emacs-$EMACS_VERSION.tar.gz
+cd $EMACS_DIR && ./configure && make && sudo make install
