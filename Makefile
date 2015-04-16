@@ -6,7 +6,7 @@ SCRIPTS := $(shell ls install)
 # prerequisites mapping
 git: bash
 ruby: bash git
-emacs: bash git
+emacs: bash git ruby
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
