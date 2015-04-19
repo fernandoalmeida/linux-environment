@@ -1,6 +1,6 @@
 TMP := tmp
 VPATH := $(TMP)
-SCRIPTS := $(shell ls install)
+SCRIPTS := $(basename $(shell ls install))
 .DEFAULT_GOAL := install
 
 # prerequisites mapping
@@ -11,7 +11,7 @@ emacs: bash git ruby
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
 $(SCRIPTS):
-	. install/$@
+	. install/$@.sh
 	@touch $(TMP)/$@
 
 # Docker rules (helpers)
