@@ -11,7 +11,7 @@ emacs: bash git ruby
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
 $(SCRIPTS):
-	. install/$@.sh
+	./install/$@.sh
 	@touch $(TMP)/$@
 
 # Docker rules (helpers)
