@@ -9,6 +9,7 @@ ruby: bash utils git
 emacs: bash utils git ruby
 mongodb: utils
 postgresql: utils
+rabbitmq: utils
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)

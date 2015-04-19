@@ -23,3 +23,4 @@ RUN sudo make emacs
 RUN sudo make postgresql
 RUN sudo make utils
 RUN sudo make mongodb
+RUN sudo make rabbitmq
