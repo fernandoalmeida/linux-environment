@@ -2,9 +2,6 @@
 
 : ${POSTGRESQL_VERSION:='9.4'}
 
-sudo apt-get update -qq
-sudo apt-get install -qq --yes --force-yes wget ca-certificates lsb-release
-
 packages="
   postgresql-$POSTGRESQL_VERSION
   postgresql-client-$POSTGRESQL_VERSION

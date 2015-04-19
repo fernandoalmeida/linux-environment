@@ -5,8 +5,10 @@ SCRIPTS := $(basename $(shell ls install))
 
 # prerequisites mapping
 git: bash
-ruby: bash git
-emacs: bash git ruby
+ruby: bash utils git
+emacs: bash utils git ruby
+mongodb: utils
+postgresql: utils
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)

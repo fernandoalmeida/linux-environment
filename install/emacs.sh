@@ -6,7 +6,6 @@
 : ${EMACS_DOTFILES_REPO:='https://github.com/fernandoalmeida/.emacs.d.git'}
 
 packages="
-  wget
   build-essential
   libncurses5
   libncurses5-dev

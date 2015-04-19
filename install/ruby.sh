@@ -14,7 +14,6 @@ packages="
     libxslt-dev
     libffi-dev
     build-essential
-    curl
     openssl
 "
 
