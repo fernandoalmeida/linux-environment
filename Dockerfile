@@ -21,3 +21,4 @@ RUN sudo make git
 RUN sudo make ruby
 RUN sudo make emacs
 RUN sudo make postgresql
+RUN sudo make mongodb
