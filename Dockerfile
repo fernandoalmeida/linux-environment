@@ -25,3 +25,4 @@ RUN sudo make utils
 RUN sudo make mongodb
 RUN sudo make rabbitmq
 RUN sudo make docker
+RUN sudo make lua
