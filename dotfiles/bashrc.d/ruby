@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 export RBENV_ROOT="$HOME/.rbenv"
-export PATH="${RBENV_ROOT}/.rbenv/shims:${RBENV_ROOT}/bin:${PATH}"
+export PATH="$RBENV_ROOT/shims:$RBENV_ROOT/bin:$PATH"
 
-source "${RBENV_ROOT}/completions/rbenv.bash"
+source "$RBENV_ROOT/completions/rbenv.bash"
 eval "$(rbenv init -)"
 rbenv rehash 2>/dev/null
 
