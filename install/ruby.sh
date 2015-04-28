@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-: ${RUBY_VERSION:="2.2.0"}
+: ${RUBY_VERSION:="2.2.2"}
 : ${RBENV_ROOT:="$HOME/.rbenv"}
 
 packages="
