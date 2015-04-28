@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 : ${POSTGRESQL_VERSION:='9.4'}
 

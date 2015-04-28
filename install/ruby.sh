@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 : ${RUBY_VERSION:="2.2.0"}
 : ${RBENV_ROOT:="$HOME/.rbenv"}

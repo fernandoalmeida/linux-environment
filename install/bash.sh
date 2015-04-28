@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 mkdir -p $HOME/.bashrc.d/
 ln -sfn $(pwd)/dotfiles/bashrc.d/bash_aliases $HOME/.bashrc.d/

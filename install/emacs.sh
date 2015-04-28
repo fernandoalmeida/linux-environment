@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 : ${EMACS_VERSION:="24.4"}
 : ${TMP:="$(pwd)/tmp"}
