@@ -6,7 +6,7 @@ ENV DEBIAN_PRIORITY critical
 ENV DEBCONF_NOWARNINGS yes
 
 RUN apt-get update -qq
-RUN apt-get install -qq --yes --force-yes make sudo apt-utils
+RUN apt-get install -qq --yes --force-yes make sudo
 
 ENV RUNTIME_USER fernando
 RUN useradd -m -U -s /bin/bash -G sudo $RUNTIME_USER
