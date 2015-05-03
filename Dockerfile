@@ -5,6 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV DEBIAN_PRIORITY critical
 ENV DEBCONF_NOWARNINGS yes
 
+RUN find /etc/apt/sources.list* -type f -exec sed -i 'p; s/^deb /deb-src /' '{}' +
+
 RUN apt-get update -qq
 RUN apt-get install -qq --yes --force-yes make sudo
 
