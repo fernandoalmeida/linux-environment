@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/usr/bin/env bash
 
 : ${RUBY_VERSION:="2.2.2"}
 : ${RBENV_ROOT:="$HOME/.rbenv"}
@@ -19,14 +19,24 @@ packages="
 
 sudo apt-get install $packages --yes --force-yes -qq
 
-git clone git://github.com/sstephenson/rbenv.git $RBENV_ROOT
-git clone git://github.com/sstephenson/ruby-build.git $RBENV_ROOT/plugins/ruby-build
-git clone git://github.com/sstephenson/rbenv-gem-rehash.git $RBENV_ROOT/plugins/rbenv-gem-rehash
-git clone git://github.com/carsomyr/rbenv-bundler.git $RBENV_ROOT/plugins/rbenv-bundler
-git clone git://github.com/jamis/rbenv-gemset.git $RBENV_ROOT/plugins/rbenv-gemset
+git clone git://github.com/sstephenson/rbenv.git \
+          $RBENV_ROOT
 
-ln -sfn $(pwd)/dotfiles/bashrc.d/ruby $HOME/.bashrc.d/
+git clone git://github.com/sstephenson/ruby-build.git \
+          $RBENV_ROOT/plugins/ruby-build
 
-. $HOME/.bashrc.d/ruby
+git clone git://github.com/sstephenson/rbenv-gem-rehash.git \
+          $RBENV_ROOT/plugins/rbenv-gem-rehash
+
+git clone git://github.com/carsomyr/rbenv-bundler.git \
+          $RBENV_ROOT/plugins/rbenv-bundler
+
+git clone git://github.com/jamis/rbenv-gemset.git \
+          $RBENV_ROOT/plugins/rbenv-gemset
+
+ln -sfn $(pwd)/dotfiles/bashrc.d/ruby \
+        $HOME/.bashrc.d/
+
+source $(pwd)/dotfiles/bashrc.d/ruby
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION
