@@ -14,7 +14,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 sudo apt-get update -qq
 sudo apt-get install -qq --yes --force-yes $packages
 
-cat <<EOF > /etc/postgresql/$POSTGRESQL_VERSION/main/pg_hba.conf
+cat <<EOF | sudo tee /etc/postgresql/$POSTGRESQL_VERSION/main/pg_hba.conf
 local  all  all                trust
 host   all  all  127.0.0.1/32  trust
 host   all  all  ::1/128       trust
