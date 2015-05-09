@@ -23,5 +23,5 @@ alias berdr='bundle exec rake db:rollback'
 #
 ## CTAG
 #
-alias ctags_ruby='ctags -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems .'
-alias ctags_bundler='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
+alias ctags_ruby='ctags -e -R --languages=ruby --exclude=.git --exclude=log --exclude=.gems .'
+alias ctags_bundler='ctags -e -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
