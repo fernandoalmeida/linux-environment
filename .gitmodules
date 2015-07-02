@@ -1,0 +1,3 @@
+[submodule "dotfiles/config/awesome/themes"]
+	path = dotfiles/config/awesome/themes
+	url = https://github.com/mikar/awesome-themes.git
