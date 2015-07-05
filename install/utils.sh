@@ -7,6 +7,7 @@ packages="
   adduser
   ca-certificates
   apt-utils
+  htop
 "
 
 sudo apt-get install -qq --yes --force-yes $packages
