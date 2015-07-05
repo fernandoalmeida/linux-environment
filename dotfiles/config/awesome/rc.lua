@@ -1,4 +1,4 @@
-local gears = require("gears")
+gears = require("gears")
 awful = require("awful")
 wibox = require("wibox")
 beautiful = require("beautiful")
@@ -41,16 +41,6 @@ do
 end
 -- }}}
 
--- {{{ Theme
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/bamboo/theme.lua")
-
-if beautiful.wallpaper then
-   for s = 1, screen.count() do
-      gears.wallpaper.maximized(beautiful.wallpaper, s, true)
-   end
-end
--- }}}
-
 -- {{{ Variable definitions
 terminal = "x-terminal-emulator"
 
@@ -71,6 +61,7 @@ for s = 1, screen.count() do
 end
 -- }}}
 
+require("custom/theme")
 require("custom/menu")
 require("custom/widgets")
 require("custom/rules")
