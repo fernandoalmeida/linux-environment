@@ -42,6 +42,16 @@ vicious.register(
    text_widget("  CPU: ", string.format("%2s%%", "$1"))
 )
 
+-- Volume widget
+volume_widget = wibox.widget.textbox()
+vicious.register(
+   volume_widget,
+   vicious.widgets.volume,
+   text_widget("VOL: ", "$1"),
+   0.3,
+   "Master"
+)
+
 mywibox = {}
 mypromptbox = {}
 mylayoutbox = {}
@@ -123,6 +133,7 @@ for s = 1, screen.count() do
    right_layout:add(cpu_widget)
    right_layout:add(memory_widget)
    right_layout:add(bat_widget)
+   right_layout:add(volume_widget)
    right_layout:add(date_widget)
    right_layout:add(mylayoutbox[s])
 
