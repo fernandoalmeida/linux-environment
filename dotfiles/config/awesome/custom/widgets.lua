@@ -25,6 +25,14 @@ vicious.register(
    10,
    "BAT0"
 )
+
+-- Memory widget
+memory_widget = wibox.widget.textbox()
+vicious.register(
+   memory_widget,
+   vicious.widgets.mem,
+   text_widget("MEM: ", "$2 MB")
+)
 mywibox = {}
 mypromptbox = {}
 mylayoutbox = {}
@@ -103,6 +111,7 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
+   right_layout:add(memory_widget)
    right_layout:add(bat_widget)
    right_layout:add(date_widget)
    right_layout:add(mylayoutbox[s])
