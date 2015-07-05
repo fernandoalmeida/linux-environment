@@ -1,7 +1,20 @@
 -- {{{ Wibox
-datewidget = wibox.widget.textbox()
-vicious.register(datewidget, vicious.widgets.date, " %a - %d/%m - %T ", 1)
+text_widget = function(label, value)
+   local sep = "<span color='#447799'>  |  </span>"
+   local key = "<span color='#9EBABA'>" .. label .. "</span>"
+   local val = "<span color='#F9FFC4'>" .. value .. "</span>"
 
+   return key .. val .. sep
+end
+
+-- Date widget
+date_widget = wibox.widget.textbox()
+vicious.register(
+   date_widget,
+   vicious.widgets.date,
+   text_widget("", "%a - %d/%m - %T"),
+   1
+)
 mywibox = {}
 mypromptbox = {}
 mylayoutbox = {}
@@ -80,7 +93,7 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
-   right_layout:add(datewidget)
+   right_layout:add(date_widget)
    right_layout:add(mylayoutbox[s])
 
    local layout = wibox.layout.align.horizontal()
