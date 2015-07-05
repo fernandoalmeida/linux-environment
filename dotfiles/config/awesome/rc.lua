@@ -1,5 +1,5 @@
 local gears = require("gears")
-local awful = require("awful")
+awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local naughty = require("naughty")
@@ -699,10 +699,4 @@ client.connect_signal(
 )
 -- }}}
 
--- {{{ Autostarts
--- Autostart xscreensaver
-awful.util.spawn_with_shell("xscreensaver -nosplash")
-
--- Autostart Dropbox
-awful.util.spawn_with_shell("dropbox start")
---}}}
+require("custom/autostart")
