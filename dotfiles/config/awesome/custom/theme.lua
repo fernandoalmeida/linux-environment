@@ -1,4 +1,4 @@
-beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/bamboo/theme.lua")
+beautiful.init(os.getenv("HOME") .. "/.config/awesome/themes/wombat/theme.lua")
 
 if beautiful.wallpaper then
    for s = 1, screen.count() do
