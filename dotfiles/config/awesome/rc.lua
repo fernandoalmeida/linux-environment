@@ -5,6 +5,7 @@ beautiful = require("beautiful")
 naughty = require("naughty")
 menubar = require("menubar")
 awful.rules = require("awful.rules")
+vicious = require("vicious")
 
 require("awful.autofocus")
 require("debian.menu")

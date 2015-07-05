@@ -1,5 +1,7 @@
 -- {{{ Wibox
-mytextclock = awful.widget.textclock()
+datewidget = wibox.widget.textbox()
+vicious.register(datewidget, vicious.widgets.date, " %a - %d/%m - %T ", 1)
+
 mywibox = {}
 mypromptbox = {}
 mylayoutbox = {}
@@ -78,7 +80,7 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
-   right_layout:add(mytextclock)
+   right_layout:add(datewidget)
    right_layout:add(mylayoutbox[s])
 
    local layout = wibox.layout.align.horizontal()
