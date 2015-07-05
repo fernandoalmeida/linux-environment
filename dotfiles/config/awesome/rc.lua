@@ -1,9 +1,9 @@
 local gears = require("gears")
 awful = require("awful")
 local wibox = require("wibox")
-local beautiful = require("beautiful")
+beautiful = require("beautiful")
 local naughty = require("naughty")
-local menubar = require("menubar")
+menubar = require("menubar")
 
 awful.rules = require("awful.rules")
 require("awful.autofocus")
@@ -64,53 +64,14 @@ layouts = {
    awful.layout.suit.fair,
    awful.layout.suit.max
 }
--- }}}
 
--- {{{ Tags
 tags = {}
 for s = 1, screen.count() do
    tags[s] = awful.tag({ 1, 2, 3, 4 }, s, layouts[1])
 end
 -- }}}
 
--- {{{ Menu
-myawesomemenu = {
-   { "manual", terminal .. " -e man awesome" },
-   { "edit config", editor_cmd .. " " .. awesome.conffile },
-   { "restart", awesome.restart },
-   { "quit", awesome.quit }
-}
-
-mymainmenu = awful.menu(
-   {
-      items = {
-         { "Emacs", "emacs" },
-         { "Bash", terminal },
-         { "Firefox", "firefox" },
-         { "Spotify", "spotify" },
-         { "", nil },
-         { "Debian", debian.menu.Debian_menu.Debian },
-         { "Awesome", myawesomemenu, beautiful.awesome_icon },
-         { "", nil },
-         { "screen lock", "xscreensaver-command -lock" },
-         { "logout", awesome.quit },
-         { "", nil },
-         { "suspend", "suspend" },
-         { "reboot", "shutdown -r now" },
-         { "shutdown", "shutdown -h now" }
-      }
-   }
-)
-
-mylauncher = awful.widget.launcher(
-   {
-      image = beautiful.awesome_icon,
-      menu = mymainmenu
-   }
-)
-
-menubar.utils.terminal = terminal
--- }}}
+require("custom/menu")
 
 -- {{{ Wibox
 mytextclock = awful.widget.textclock()
