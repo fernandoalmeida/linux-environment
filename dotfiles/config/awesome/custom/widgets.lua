@@ -15,6 +15,16 @@ vicious.register(
    text_widget("", "%a - %d/%m - %T"),
    1
 )
+
+-- Battery widget
+local bat_widget = wibox.widget.textbox()
+vicious.register(
+   bat_widget,
+   vicious.widgets.bat,
+   text_widget("BAT: ", "$1$2% $3h"),
+   10,
+   "BAT0"
+)
 mywibox = {}
 mypromptbox = {}
 mylayoutbox = {}
@@ -93,6 +103,7 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
+   right_layout:add(bat_widget)
    right_layout:add(date_widget)
    right_layout:add(mylayoutbox[s])
 
