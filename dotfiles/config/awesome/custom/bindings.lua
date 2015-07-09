@@ -207,12 +207,26 @@ globalkeys = awful.util.table.join(
       end
    ),
 
-   -- Menubar
+   -- Volume bindings
    awful.key(
       { modkey },
-      "p",
+      "=",
       function()
-         menubar.show()
+	 awful.util.spawn("amixer set Master 5%+", false)
+      end
+   ),
+   awful.key(
+      { modkey },
+      "-",
+      function()
+	 awful.util.spawn("amixer set Master 5%-", false)
+      end
+   ),
+   awful.key(
+      { modkey },
+      "0",
+      function()
+	 awful.util.spawn("amixer set Master toggle", false)
       end
    )
 )
