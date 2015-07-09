@@ -5,3 +5,5 @@ sudo apt-get -qq update
 sudo apt-get install --yes --force-yes awesome awesome-extra
 
 ln -sfn $(pwd)/dotfiles/config/awesome $HOME/.config/
+
+sudo chmod a+s /sbin/shutdown

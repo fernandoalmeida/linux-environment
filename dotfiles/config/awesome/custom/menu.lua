@@ -20,7 +20,6 @@ mymainmenu = awful.menu(
          { "screen lock", "xscreensaver-command -lock" },
          { "logout", awesome.quit },
          { "", nil },
-         { "suspend", "suspend" },
          { "reboot", "shutdown -r now" },
          { "shutdown", "shutdown -h now" }
       }
