@@ -39,7 +39,7 @@ cpu_widget = wibox.widget.textbox()
 vicious.register(
    cpu_widget,
    vicious.widgets.cpu,
-   text_widget("  CPU: ", string.format("%2s%%", "$1"))
+   text_widget("CPU: ", string.format("%2s%%", "$1"))
 )
 
 -- Volume widget
@@ -51,6 +51,19 @@ vicious.register(
    0.3,
    "Master"
 )
+
+-- Network widget
+ net_widget = wibox.widget.textbox()
+ vicious.register(
+    net_widget,
+    vicious.widgets.net,
+    text_widget(
+       "  NET: ",
+       '<span color="#7F9F7F">${wlan0 up_kb}↑</span>  '..
+       '<span color="#CC9393">${wlan0 down_kb}↓</span>'
+    ),
+    3
+ )
 
 mywibox = {}
 mypromptbox = {}
@@ -130,6 +143,7 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
+   right_layout:add(net_widget)
    right_layout:add(cpu_widget)
    right_layout:add(memory_widget)
    right_layout:add(bat_widget)
