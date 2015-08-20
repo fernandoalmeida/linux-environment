@@ -30,6 +30,19 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
+      { modkey, "Control" },
+      "t",
+      function()
+	 awful.util.spawn(
+	    "xinput " ..
+	       "| grep 'maXTouch Digitizer'" ..
+	       "| awk '{print $7}'" ..
+	       "| tr -d 'id=' " ..
+	       "| xargs xinput --disable"
+	 )
+      end
+   ),
+   awful.key(
       { modkey,           },
       "j",
       function ()
