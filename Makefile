@@ -11,6 +11,7 @@ mongodb: utils
 postgresql: utils
 rabbitmq: utils
 docker: utils
+redis: utils
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
