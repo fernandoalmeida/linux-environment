@@ -40,6 +40,7 @@ globalkeys = awful.util.table.join(
 	       "| tr -d 'id=' " ..
 	       "| xargs xinput --disable"
 	 )
+	 naughty.notify({title = 'Touch Screen', text = 'disabled'})
       end
    ),
    awful.key(
