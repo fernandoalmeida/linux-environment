@@ -13,6 +13,7 @@ rabbitmq: utils
 docker: utils
 redis: utils
 aws: python
+docker_registy: aws
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
