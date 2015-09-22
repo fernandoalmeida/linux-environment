@@ -12,6 +12,7 @@ postgresql: utils
 rabbitmq: utils
 docker: utils
 redis: utils
+aws: python
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
