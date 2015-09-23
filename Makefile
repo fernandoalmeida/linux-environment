@@ -1,6 +1,6 @@
 TMP := tmp
 VPATH := $(TMP)
-SCRIPTS := $(basename $(shell ls install))
+SCRIPTS := $(basename $(filter %.sh, $(shell ls install)))
 .DEFAULT_GOAL := install
 
 # prerequisites mapping
