@@ -7,6 +7,7 @@ packages="
   adduser
   ca-certificates
   apt-utils
+  apt-file
   htop
 "
 
