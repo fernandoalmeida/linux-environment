@@ -11,13 +11,13 @@ packages="
   libncurses5-dev
   libxaw7-dev
   libgif-dev
+  libjpeg-dev
+  libpng-dev
+  libtiff-dev
 "
 
 ruby_gems="
   rubocop
-  evernote_oauth
-  gdbm
-  ffi
 "
 
 # install dependencies
