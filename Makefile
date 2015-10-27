@@ -6,7 +6,7 @@ SCRIPTS := $(basename $(shell ls install))
 # prerequisites mapping
 git: bash
 ruby: bash utils git
-emacs: bash utils git ruby
+emacs: bash utils git
 mongodb: utils
 postgresql: utils
 rabbitmq: utils
