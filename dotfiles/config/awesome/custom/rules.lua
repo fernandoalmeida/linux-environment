@@ -21,10 +21,10 @@ awful.rules.rules = {
    },
    {
       rule = {
-	 class = "Emacs"
+	 class = "Conkeror"
       },
       properties = {
-	 tag = tags[1][2]
+	 tag = tags[1][1]
       }
    },
    {
