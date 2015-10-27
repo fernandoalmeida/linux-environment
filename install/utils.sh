@@ -11,4 +11,4 @@ packages="
   htop
 "
 
-sudo apt-get install -qq --yes --force-yes $packages
+sudo apt-get install -qqy $packages

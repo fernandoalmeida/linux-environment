@@ -8,7 +8,7 @@ ENV DEBCONF_NOWARNINGS yes
 RUN find /etc/apt/sources.list* -type f -exec sed -i 'p; s/^deb /deb-src /' '{}' +
 
 RUN apt-get update -qq
-RUN apt-get install -qq --yes --force-yes make sudo
+RUN apt-get install -qqy make sudo
 
 ENV RUNTIME_USER fernando
 RUN useradd -m -U -s /bin/bash -G sudo $RUNTIME_USER

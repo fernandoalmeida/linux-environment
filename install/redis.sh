@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install dependencies
-sudo apt-get install -qq --yes --force-yes gcc libc6-dev
+sudo apt-get install -qqy gcc libc6-dev
 
 # Download source
 curl -sSL http://download.redis.io/releases/redis-stable.tar.gz \

@@ -17,7 +17,7 @@ packages="
     openssl
 "
 
-sudo apt-get install $packages --yes --force-yes -qq
+sudo apt-get install -qqy $packages
 
 git clone git://github.com/sstephenson/rbenv.git \
           $RBENV_ROOT
