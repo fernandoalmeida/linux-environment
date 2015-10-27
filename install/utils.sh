@@ -9,6 +9,7 @@ packages="
   apt-utils
   apt-file
   htop
+  locate
 "
 
 sudo apt-get install -qqy $packages
