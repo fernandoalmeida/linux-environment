@@ -1,1 +1,1 @@
-require('tab-bar.js')
+require('new-tabs.js')
