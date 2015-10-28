@@ -1,3 +1,5 @@
+define_delicious_webjumps('fernandoalmeida');
+
 define_webjump("gmail", "https://mail.google.com");
 define_webjump("news", "https://news.ycombinator.com");
 define_webjump("dropbox", "https://www.dropbox.com/home");
