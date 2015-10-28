@@ -10,30 +10,6 @@ awful.rules.rules = {
          keys = clientkeys,
          buttons = clientbuttons
       }
-   },
-   {
-      rule = {
-         class = "Firefox"
-      },
-      properties = {
-         tag = tags[1][1]
-      }
-   },
-   {
-      rule = {
-	 class = "Conkeror"
-      },
-      properties = {
-	 tag = tags[1][1]
-      }
-   },
-   {
-      rule = {
-	 class = "Spotify"
-      },
-      properties = {
-	 tag = tags[1][3]
-      }
    }
 }
 -- }}}
