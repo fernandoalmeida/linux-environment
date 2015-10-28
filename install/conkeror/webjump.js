@@ -2,6 +2,7 @@ define_webjump("gmail", "https://mail.google.com");
 define_webjump("news", "https://news.ycombinator.com");
 define_webjump("dropbox", "https://www.dropbox.com/home");
 define_webjump("ifttt", "https://ifttt.com/myrecipes/personal");
+define_webjump("evernote", "https://www.evernote.com/Home.action");
 
 // Locaweb stuff
 define_webjump("outlook", "https://outlook.locaweb.com.br");
