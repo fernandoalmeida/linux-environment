@@ -5,3 +5,9 @@ if beautiful.wallpaper then
       gears.wallpaper.maximized(beautiful.wallpaper, s, true)
    end
 end
+
+-- {{{ Borders
+beautiful.border_width  = "2"
+beautiful.border_normal = "#2d4113"
+beautiful.border_focus  = "#a2bf36"
+-- }}}
