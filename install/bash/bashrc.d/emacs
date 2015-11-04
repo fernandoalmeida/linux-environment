@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 alias emacss='emacs &'
-alias ed='emacs --daemon'
-alias ec='emacsclient -c &'
-alias et='TERM=xterm-256color emacsclient -t'
+alias emacsd='emacs --daemon'
+alias emacsp='TERM=xterm-256color emacs -nw --insert'
+alias emacsc='emacsclient -c'
+alias emacst='TERM=xterm-256color emacsclient -t'
