@@ -34,9 +34,9 @@ git clone git://github.com/carsomyr/rbenv-bundler.git \
 git clone git://github.com/jamis/rbenv-gemset.git \
           $RBENV_ROOT/plugins/rbenv-gemset
 
-ln -sfn $(pwd)/dotfiles/bashrc.d/ruby \
+ln -sfn $(pwd)/install/bash/bashrc.d/ruby \
         $HOME/.bashrc.d/
 
-source $(pwd)/dotfiles/bashrc.d/ruby
+source $(pwd)/install/bash/bashrc.d/ruby
 rbenv install $RUBY_VERSION
 rbenv global $RUBY_VERSION

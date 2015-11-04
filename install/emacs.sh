@@ -4,7 +4,7 @@
 
 sudo apt-get install -qqy emacs
 
-ln -sfn $(pwd)/dotfiles/bashrc.d/emacs $HOME/.bashrc.d/
+ln -sfn $(pwd)/install/bash/bashrc.d/emacs $HOME/.bashrc.d/
 
 # download and configure my Emacs dotfiles
 if [ ! -d $HOME/.emacs.d ] ; then
