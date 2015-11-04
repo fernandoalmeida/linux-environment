@@ -10,6 +10,7 @@ packages="
   apt-file
   htop
   locate
+  tree
 "
 
 sudo apt-get install -qqy $packages
