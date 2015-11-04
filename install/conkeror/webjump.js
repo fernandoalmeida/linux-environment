@@ -20,5 +20,10 @@ define_webjump("confluence", "http://confluence.locaweb.com.br/");
 define_webjump("rh", "https://rh.locaweb.com.br/");
 define_webjump("basecamp", "https://basecamp.com/1739668/projects/9206881");
 define_webjump("kanban", "https://paaslocaweb.kanbanery.com/projects/45757/board/");
+define_webjump('fila-beta', 'http://fila-beta.hospedagem.systemintegration.locaweb.com.br/LogGeral.aspx?prov=%s')
+define_webjump('hank', 'https://hank.qa.locaweb.com.br')
+define_webjump('hodor', 'https://hodor.qa.locaweb.com.br')
+define_webjump('hosting-panel', 'https://hosting-panel.hospedagem.qa.locaweb.com.br')
+define_webjump('prov-workers', 'http://prov-workers.hospedagem.systemintegration.locaweb.com.br/search?query=%s')
 
 webjumps.g = webjumps.google;
