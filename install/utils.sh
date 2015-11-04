@@ -11,6 +11,7 @@ packages="
   htop
   locate
   tree
+  software-properties-common
 "
 
 sudo apt-get install -qqy $packages
