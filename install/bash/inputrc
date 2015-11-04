@@ -7,5 +7,6 @@ set keyseq-timeout 1000
 set colored-status on
 
 "\C-x\C-r":re-read-init-file
-"\C-xh":"bind -p\C-j"
+"\C-xh":"bind -p | less\C-j"
 "\C-\M-l":"\C-a\C-kreset\C-j\C-y"
+"\es":"\C-asudo \C-e"
