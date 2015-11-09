@@ -12,6 +12,7 @@ packages="
   locate
   tree
   software-properties-common
+  aptitude
 "
 
 sudo apt-get install -qqy $packages
