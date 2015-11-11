@@ -1,4 +1,3 @@
--- {{{ Key bindings
 globalkeys = awful.util.table.join(
    awful.key(
       { modkey,           },
@@ -7,8 +6,6 @@ globalkeys = awful.util.table.join(
          mymainmenu:toggle()
       end
    ),
-
-   -- Navigation
    awful.key(
       { modkey,           },
       "p",
@@ -52,8 +49,6 @@ globalkeys = awful.util.table.join(
          awful.client.swap.byidx( -1)
       end
    ),
-
-   -- Standard program
    awful.key(
       { modkey,           },
       "Return",
@@ -71,8 +66,6 @@ globalkeys = awful.util.table.join(
       "q",
       awesome.quit
    ),
-
-   -- Client
    awful.key(
       { modkey,           },
       "l",
@@ -130,20 +123,6 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
-      { modkey, },
-      "f",
-      function ()
-         awful.client.fullscreen = not awful.client.fullscreen
-      end
-   ),
-   awful.key(
-      { modkey, "Shift"   },
-      "c",
-      function ()
-         awful.client:kill()
-      end
-   ),
-   awful.key(
       { modkey, "Control" },
       "space",
       awful.client.floating.toggle
@@ -157,33 +136,11 @@ globalkeys = awful.util.table.join(
    ),
    awful.key(
       { modkey,           },
-      "o",
-      awful.client.movetoscreen
-   ),
-   awful.key(
-      { modkey,           },
       "t",
       function ()
          awful.client.ontop = not awful.client.ontop
       end
    ),
-   awful.key(
-      { modkey,           },
-      "m",
-      function ()
-         awful.client.minimized = true
-      end
-   ),
-   awful.key(
-      { modkey, "Shift"   },
-      "m",
-      function ()
-         awful.client.maximized_horizontal = not awful.client.maximized_horizontal
-         awful.client.maximized_vertical   = not awful.client.maximized_vertical
-      end
-   ),
-
-   -- Prompt
    awful.key(
       { modkey },
       "r",
@@ -191,7 +148,6 @@ globalkeys = awful.util.table.join(
          mypromptbox[mouse.screen]:run()
       end
    ),
-
    awful.key(
       { modkey },
       "x",
@@ -204,8 +160,6 @@ globalkeys = awful.util.table.join(
          )
       end
    ),
-
-   -- Volume bindings
    awful.key(
       { modkey },
       "=",
@@ -295,9 +249,7 @@ for i = 1, 9 do
 end
 
 root.keys(globalkeys)
--- }}}
 
--- {{{ Mouse bindings
 root.buttons(
    awful.util.table.join(
       awful.button(
@@ -319,4 +271,63 @@ root.buttons(
       )
    )
 )
--- }}}
+
+clientkeys = awful.util.table.join(
+   awful.key(
+      { modkey,           },
+      "f",
+      function (c)
+	 c.fullscreen = not c.fullscreen
+      end
+   ),
+   awful.key(
+      { modkey, "Shift"   },
+      "c",
+      function (c)
+	 c:kill()
+      end
+   ),
+   awful.key(
+      { modkey,           },
+      "o",
+      awful.client.movetoscreen
+   ),
+   awful.key(
+      { modkey, "Shift"   },
+      "r",
+      function (c)
+	 c:redraw()
+      end
+   )
+)
+
+clientbuttons = awful.util.table.join(
+   awful.button(
+      { },
+      1,
+      function (c)
+	 client.focus = c;
+	 c:raise()
+      end
+   ),
+   awful.button(
+      { modkey },
+      1,
+      awful.mouse.client.move
+   ),
+   awful.button(
+      { modkey },
+      3,
+      awful.mouse.client.resize
+   )
+)
+
+awful.rules.rules = {
+   {
+      rule = { },
+      properties = {
+	 keys = clientkeys,
+	 buttons = clientbuttons
+      }
+   },
+}
