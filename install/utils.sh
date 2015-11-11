@@ -13,6 +13,7 @@ packages="
   tree
   software-properties-common
   aptitude
+  strace
 "
 
 sudo apt-get install -qqy $packages
