@@ -3,7 +3,7 @@ VPATH := $(TMP)
 SCRIPTS := $(basename $(shell ls install))
 .DEFAULT_GOAL := install
 
-# prerequisites mapping
+# dependencies mapping
 git: bash
 ruby: bash utils git
 emacs: bash utils git
@@ -13,6 +13,7 @@ rabbitmq: utils
 docker: utils
 redis: utils
 aws: python
+awesome: bash xscreensaver
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
