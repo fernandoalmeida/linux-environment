@@ -1,0 +1,12 @@
+steps:
+  - imports:
+      align: global
+  - language_pragmas:
+      style: vertical
+      remove_redundant: true
+  - records: {}
+  - tabs:
+      spaces: 8 # as specified by the Haskell report.
+  - trailing_whitespace: {}
+
+columns: 80
