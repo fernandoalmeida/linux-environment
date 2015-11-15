@@ -192,14 +192,11 @@ globalkeys = awful.util.table.join(
       { modkey, "Control" },
       "t",
       function()
-	 awful.util.spawn(
-	    "xinput " ..
-	       "| grep 'maXTouch Digitizer'" ..
-	       "| awk '{print $7}'" ..
-	       "| tr -d 'id=' " ..
-	       "| xargs xinput --disable"
+	 result = awful.util.spawn_with_shell(
+	    "source $HOME/.bashrc.d/touchscreen.sh && " ..
+	    "touchscreen disable"
 	 )
-	 naughty.notify({title = 'Touch Screen', text = 'disabled'})
+	 naughty.notify({title = 'Touch Screen', text = result})
       end
    )
 )
