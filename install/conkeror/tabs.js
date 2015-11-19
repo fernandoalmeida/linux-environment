@@ -1,4 +1,6 @@
-require('new-tabs.js')
+require('new-tabs.js');
+
+tab_bar_mode(false);
 
 function define_switch_buffer_key (key, buf_num) {
     define_key(
