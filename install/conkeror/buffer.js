@@ -56,7 +56,7 @@ interactive(
     }
 );
 
-define_key(default_global_keymap, "C-t", "find-url-new-buffer");
+define_key(default_global_keymap, "C-x f", "find-url-new-buffer");
 define_key(content_buffer_normal_keymap, "d", "follow-new-buffer-background");
 define_key(default_global_keymap, "C-x 0", "kill-current-buffer");
 define_key(default_global_keymap, "C-f4", "kill-current-buffer");
