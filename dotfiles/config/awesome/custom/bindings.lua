@@ -198,6 +198,17 @@ globalkeys = awful.util.table.join(
 	 )
 	 naughty.notify({title = 'Touch Screen', text = result})
       end
+   ),
+   awful.key(
+      { },
+      "Print",
+      function ()
+	 awful.util.spawn_with_shell(
+	    "file=screenshot-$(date +%Y%m%d%H%M%S).png && " ..
+	    "import -window root -quality 98 -quiet $file && " ..
+	    "eog $file"
+	 )
+      end
    )
 )
 
