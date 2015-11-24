@@ -14,6 +14,7 @@ packages="
   software-properties-common
   aptitude
   strace
+  grdesktop
 "
 
 sudo apt-get install -qqy $packages
