@@ -13,17 +13,19 @@ define_webjump("gh", "http://github.com/search?q=%s&type=Everything");
 
 // Locaweb stuff
 define_webjump("outlook", "https://outlook.locaweb.com.br");
-define_webjump("jenkins", "http://ci.qaservices.locaweb.com.br");
+define_webjump("ci", "http://ci.qaservices.locaweb.com.br");
 define_webjump("code", "https://code.locaweb.com.br/%s");
 define_webjump("servicenow", "https://lwprod.service-now.com/");
 define_webjump("confluence", "http://confluence.locaweb.com.br/");
-define_webjump("rh", "https://rh.locaweb.com.br/");
+define_webjump("rh", "http://rh.locaweb.com.br/");
 define_webjump("basecamp", "https://basecamp.com/1739668/projects/9206881");
 define_webjump("kanban", "https://paaslocaweb.kanbanery.com/projects/45757/board/");
 define_webjump('fila-beta', 'http://fila-beta.hospedagem.systemintegration.locaweb.com.br/LogGeral.aspx?prov=%s')
+define_webjump('sistema-beta', 'sistema-beta.hospedagem.systemintegration.locaweb.com.br')
 define_webjump('hank', 'https://hank.qa.locaweb.com.br')
 define_webjump('hodor', 'https://hodor.qa.locaweb.com.br')
 define_webjump('hosting-panel', 'http://hosting-panel.qa.locaweb.com.br')
 define_webjump('prov-workers', 'http://prov-workers.hospedagem.systemintegration.locaweb.com.br/search?query=%s')
+define_webjump('ponto', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
 
 webjumps.g = webjumps.google;
