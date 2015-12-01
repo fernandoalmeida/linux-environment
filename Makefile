@@ -15,6 +15,7 @@ redis: utils
 aws: python
 awesome: bash xscreensaver
 java: bash
+orientdb: java
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
