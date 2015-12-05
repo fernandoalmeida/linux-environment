@@ -56,9 +56,12 @@ interactive(
     }
 );
 
+define_key(default_global_keymap, "M-f", "follow");
+define_key(default_global_keymap, "M-d", "follow-new-buffer-background");
 define_key(default_global_keymap, "C-x f", "find-url-new-buffer");
-define_key(content_buffer_normal_keymap, "d", "follow-new-buffer-background");
 define_key(default_global_keymap, "C-x 0", "kill-current-buffer");
-define_key(default_global_keymap, "C-f4", "kill-current-buffer");
+define_key(default_global_keymap, "M-q", "kill-current-buffer");
 define_key(default_global_keymap, "C-T", "revive-buffer");
 define_key(default_global_keymap, "f5", "reload");
+define_key(default_global_keymap, "C-0", "zoom-reset-full");
+define_key(default_global_keymap, "C-M-0", "zoom-reset-text");
