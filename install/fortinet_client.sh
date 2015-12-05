@@ -14,8 +14,12 @@ ZqnQs+JT2sX1DZuEgEDJCPW8H0aaVmnMBmidqhxMMzm2hS2HUT8=
 '
 
 deb=forticlient-sslvpn_4.4.2317-1_amd64.deb
-wget -q https://hadler.me/files/$deb -P /tmp/
-sudo dpkg -i /tmp/$deb
-sudo apt-get -f install # dependencies
+
+pushd $(mktemp -d)
+  wget -q https://hadler.me/files/$deb
+  sudo dpkg -i $deb
+  sudo apt-get -f install # dependencies
+popd
+
 sudo ln -sf /opt/forticlient-sslvpn/forticlientsslvpn.sh \
             /usr/local/bin/forticlientsslvpn
