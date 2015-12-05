@@ -26,6 +26,8 @@ define_webjump('hank', 'https://hank.qa.locaweb.com.br')
 define_webjump('hodor', 'https://hodor.qa.locaweb.com.br')
 define_webjump('hosting-panel', 'http://hosting-panel.qa.locaweb.com.br')
 define_webjump('prov-workers', 'http://prov-workers.hospedagem.systemintegration.locaweb.com.br/search?query=%s')
-define_webjump('ponto', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
+define_webjump('portal-locaweb', 'https://portallocaweb.cservices.com.br/PortalLocaweb/')
+define_webjump('ponto-online', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
+define_webjump('campfire', 'https://loca.campfirenow.com/')
 
 webjumps.g = webjumps.google;
