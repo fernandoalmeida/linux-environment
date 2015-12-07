@@ -15,6 +15,7 @@ packages="
   aptitude
   strace
   grdesktop
+  sysstat
 "
 
 sudo apt-get install -qqy $packages
