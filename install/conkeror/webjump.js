@@ -28,6 +28,7 @@ define_webjump('hosting-panel', 'http://hosting-panel.qa.locaweb.com.br')
 define_webjump('prov-workers', 'http://prov-workers.hospedagem.systemintegration.locaweb.com.br/search?query=%s')
 define_webjump('portal-locaweb', 'https://portallocaweb.cservices.com.br/PortalLocaweb/')
 define_webjump('ponto-online', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
+define_webjump('espelho-de-ponto', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/Relatorios/SolicitaRelatorio.asp?Relatorio=RELRB118')
 define_webjump('campfire', 'https://loca.campfirenow.com/')
 
 webjumps.g = webjumps.google;
