@@ -10,3 +10,6 @@ set colored-status on
 "\C-xh":"bind -p | less\C-j"
 "\C-\M-l":"\C-a\C-kreset\C-j\C-y"
 "\es":"\C-asudo \C-e"
+"\eet":"\C-aRAILS_ENV=test \C-e"
+"\eer":"\C-aENABLE_REMOTE_FACTORY_GIRL=true \C-e"
+"\ekd":"cat /etc/resolv.conf && echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf"
