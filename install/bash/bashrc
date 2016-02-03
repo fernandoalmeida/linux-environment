@@ -1,7 +1,11 @@
 # If not running interactively, don't do anything
 if [[ -n "$PS1" ]]; then
     HISTCONTROL=ignoredups:ignorespace
-    CDPATH=$CDPATH:$HOME/trabalho/projetos:$HOME/trabalho/projetos/locaweb:$HOME/trabalho/projetos/locaweb/paas
+
+    projects="$HOME/trabalho/projetos"
+    locaweb="$projects/locaweb"
+    CDPATH="$CDPATH:$projects:$locaweb"
+    for l in `ls -d $locaweb/*/`; do CDPATH+=":$l"; done
 
     shopt -s autocd
     shopt -s cdspell
