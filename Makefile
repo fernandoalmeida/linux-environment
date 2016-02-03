@@ -1,6 +1,6 @@
 TMP := tmp
 VPATH := $(TMP)
-SCRIPTS := $(basename $(shell ls install))
+SCRIPTS := $(basename $(shell ls -p install | egrep -v /$))
 .DEFAULT_GOAL := install
 
 # dependencies mapping
