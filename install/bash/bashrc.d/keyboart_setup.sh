@@ -5,7 +5,7 @@ keyboard_setup() {
 	-rules evdev \
 	-model evdev \
 	-layout us \
-	-variant altgr-intl \
+	-variant intl \
 	-option ctrl:nocaps
 }
 
