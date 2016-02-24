@@ -11,7 +11,7 @@ mymainmenu = awful.menu(
       items = {
          { "Emacs", "emacs" },
          { "Bash", terminal },
-         { "Firefox", "firefox" },
+         { "Conkeror", "conkeror" },
          { "Spotify", "spotify" },
          { "", nil },
          { "Debian", debian.menu.Debian_menu.Debian },
@@ -20,8 +20,8 @@ mymainmenu = awful.menu(
          { "screen lock", "xscreensaver-command -lock" },
          { "logout", awesome.quit },
          { "", nil },
-         { "reboot", "shutdown -r now" },
-         { "shutdown", "shutdown -h now" }
+         { "reboot", "sudo shutdown -r now" },
+         { "shutdown", "sudo shutdown -h now" }
       }
    }
 )
