@@ -19,7 +19,7 @@ modkey = "Mod4"
 names  = { " 1:web ", " 2:dev ", " 3:term ", " 4:chat ", " 5:play ", "6:other" }
 
 layouts = {
-   -- awful.layout.suit.fair,
+   awful.layout.suit.fair,
    awful.layout.suit.tile,
    awful.layout.suit.max
 }
