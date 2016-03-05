@@ -189,14 +189,25 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
-      { modkey, "Control" },
+      { modkey, "Control", "Shift" },
       "t",
       function()
 	 result = awful.util.spawn_with_shell(
 	    "source $HOME/.bashrc.d/utils/toggle-touchscreen.sh && " ..
 	    "toggle-touchscreen"
 	 )
-	 naughty.notify({title = 'Touch Screen', text = result})
+	 naughty.notify({title = 'Toggle Touch Screen', text = result})
+      end
+   ),
+   awful.key(
+      { modkey, "Control", "Shift" },
+      "k",
+      function()
+	 result = awful.util.spawn_with_shell(
+	    "source $HOME/.bashrc.d/utils/keyboard_setup.sh && " ..
+	    "toggle-touchscreen"
+	 )
+	 naughty.notify({title = 'Keyboard Setup', text = result})
       end
    ),
    awful.key(
