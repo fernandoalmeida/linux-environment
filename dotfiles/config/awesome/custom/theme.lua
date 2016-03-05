@@ -11,3 +11,8 @@ beautiful.border_width  = "2"
 beautiful.border_normal = "#2d4113"
 beautiful.border_focus  = "#a2bf36"
 -- }}}
+
+-- {{{ Titlebars
+theme.bg_focus  = "#a2bf36"
+theme.fg_focus  = "#000000"
+-- }}}
