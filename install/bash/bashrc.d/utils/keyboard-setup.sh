@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-keyboard_setup() {
+keyboard-setup() {
     setxkbmap \
 	-rules evdev \
 	-model evdev \
@@ -9,4 +9,4 @@ keyboard_setup() {
 	-option ctrl:nocaps
 }
 
-keyboard_setup
+keyboard-setup
