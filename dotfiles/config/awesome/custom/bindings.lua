@@ -193,8 +193,8 @@ globalkeys = awful.util.table.join(
       "t",
       function()
 	 result = awful.util.spawn_with_shell(
-	    "source $HOME/.bashrc.d/touchscreen.sh && " ..
-	    "touchscreen disable"
+	    "source $HOME/.bashrc.d/utils/toggle-touchscreen.sh && " ..
+	    "toggle-touchscreen"
 	 )
 	 naughty.notify({title = 'Touch Screen', text = result})
       end
