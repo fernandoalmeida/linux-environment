@@ -1,7 +1,9 @@
 #!/bin/bash -e
 
-mkdir -p $HOME/.bashrc.d
+if [[ -d $HOME/.bashrc.d ]]; then
+    mv $HOME/.bashrc.d{,.bkp-$(date --iso-8601=seconds)}
+fi
 
-for f in $(pwd)/install/bash/bashrc.d/* ; do ln -sf $f $HOME/.bashrc.d/ ; done
+ln -nsf $(pwd)/install/bash/bashrc.d $HOME/.bashrc.d
 ln -sf $(pwd)/install/bash/bashrc $HOME/.bashrc
 ln -sf $(pwd)/install/bash/inputrc $HOME/.inputrc

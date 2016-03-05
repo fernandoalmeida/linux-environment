@@ -14,8 +14,8 @@ if [[ -n "$PS1" ]]; then
 	. /etc/bash_completion
     fi
 
-    for f in ~/.bashrc.d/* ; do
-	. $f
+    for f in $(find ~/.bashrc.d/ -type f); do
+    	. $f
     done
 
     PS1="\n\[\033[32m\][\w]"
