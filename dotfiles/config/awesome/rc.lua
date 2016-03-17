@@ -10,7 +10,7 @@ vicious = require("vicious")
 require("awful.autofocus")
 require("debian.menu")
 
-terminal = "x-terminal-emulator"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "emacs"
 editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"

@@ -1,0 +1,99 @@
+! Perl extensions
+URxvt.perl-ext-common: default,matcher,resize-font
+
+! Xft settings
+Xft.dpi: 96
+Xft.antialias: false
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+URxvt.depth: 32
+URxvt.geometry: 90x30
+URxvt.transparent: false
+URxvt.fading: 0
+URxvt.loginShell: true
+URxvt.saveLines: 65535
+URxvt.internalBorder: 3
+URxvt.lineSpace: 0
+
+! Fonts
+URxvt.allow_bold: false
+URxvt*font: xft:Monospace:pixelsize=14
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Resize fonts on the fly
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+
+! Scrollbar
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! disable the scrollback buffer for the secondary screen
+! e.g. when you scroll a pager in a secondary screen (less without -X option)
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! secondary screen scrolling with a mouse wheel
+URxvt.secondaryWheel: 1
+
+! Default browser
+URxvt.matcher.button: 1
+URxvt.urlLauncher: conkeror
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorColor: #FFFFEF
+URxvt.cursorUnderline: false
+
+! Pointer
+URxvt.pointerBlank: true
+
+! Zenburn color scheme
+! Source https://gist.github.com/cqpx/1436584
+URxvt*termName: rxvt-256color
+URxvt*xftAntialias: true
+URxvt*background: #3f3f3f
+URxvt*foreground: #dcdccc
+URxvt*cursorColor: #aaaaaa
+URxvt*colorUL: #366060
+URxvt*underlineColor: #dfaf8f
+URxvt*color0: #3f3f3f
+URxvt*color1: #cc9393
+URxvt*color2: #7f9f7f
+URxvt*color3: #d0bf8f
+URxvt*color4: #6ca0a3
+URxvt*color5: #dc8cc3
+URxvt*color6: #93e0e3
+URxvt*color7: #dcdccc
+URxvt*color8: #000000
+URxvt*color9: #dca3a3
+URxvt*color10: #bfebbf
+URxvt*color11: #f0dfaf
+URxvt*color12: #8cd0d3
+URxvt*color13: #dc8cc3
+URxvt*color14: #93e0e3
+URxvt*color15: #ffffff
+
+! Transparency
+urxvt*transparent: true
+urxvt*shading: 15
+
+! For the Ctrl+Shift bindings to work, a default binding needs to be disabled
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+! Custom bindings
+URxvt.keysym.Control-Meta-p: command:\033]720;10\007 ! scroll up 10 lines
+URxvt.keysym.Control-Meta-n: command:\033]721;10\007 ! scroll down 10 lines
