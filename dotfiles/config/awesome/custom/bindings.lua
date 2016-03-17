@@ -215,9 +215,9 @@ globalkeys = awful.util.table.join(
       "Print",
       function ()
 	 awful.util.spawn_with_shell(
-	    "file=screenshot-$(date +%Y%m%d%H%M%S).png && " ..
-	    "import -window root -quality 98 -quiet $file && " ..
-	    "eog $file"
+	    "file=Dropbox/fernando/screenshots/" ..
+	    "screenshot-$(date --iso-8601=s | tr ':' '-').png && " ..
+	    "import -window root -quality 98 -quiet $file"
 	 )
       end
    )
