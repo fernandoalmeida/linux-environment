@@ -20,16 +20,17 @@ define_webjump("servicenow", "https://lwprod.service-now.com/");
 define_webjump("confluence", "http://confluence.locaweb.com.br/");
 define_webjump("rh", "http://rh.locaweb.com.br/");
 define_webjump("basecamp", "https://basecamp.com/1739668/projects/9206881");
-define_webjump("kanban", "https://paaslocaweb.kanbanery.com/projects/45757/board/");
-define_webjump('fila-beta', 'http://fila-beta.hospedagem.systemintegration.locaweb.com.br/LogGeral.aspx?prov=%s')
-define_webjump('sistema-beta', 'sistema-beta.hospedagem.systemintegration.locaweb.com.br')
-define_webjump('hank', 'https://hank.qa.locaweb.com.br')
-define_webjump('hodor', 'https://hodor.qa.locaweb.com.br')
-define_webjump('hosting-panel', 'http://hosting-panel.qa.locaweb.com.br')
-define_webjump('prov-workers', 'http://prov-workers.hospedagem.systemintegration.locaweb.com.br/search?query=%s')
+define_webjump("kanbanery", "https://paaslocaweb.kanbanery.com/projects/45757/board/");
+define_webjump('jira', 'https://locaweb.atlassian.net/browse/HP')
+define_webjump('fila-beta', 'http://fila-beta.hospedagem.locaweb.com.br/LogGeral.aspx?prov=%s')
+define_webjump('sistema-beta', 'sistema-beta.hospedagem.locaweb.com.br')
+define_webjump('hank', 'https://hank.locaweb.com.br')
+define_webjump('hodor', 'https://hodor.locaweb.com.br')
+define_webjump('hosting-panel', 'http://painelhospedagem.locaweb.com.br/databases?per_page=500')
+define_webjump('prov-workers', 'http://prov-workers.hospedagem.locaweb.com.br/search?query=%s')
 define_webjump('portal-locaweb', 'https://portallocaweb.cservices.com.br/PortalLocaweb/')
 define_webjump('ponto-online', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
-define_webjump('espelho-de-ponto', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/Relatorios/SolicitaRelatorio.asp?Relatorio=RELRB118')
+define_webjump('ponto-espelho', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/Relatorios/SolicitaRelatorio.asp?Relatorio=RELRB118')
 define_webjump('campfire', 'https://loca.campfirenow.com/')
 define_webjump(
     'leela',
