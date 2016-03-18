@@ -11,6 +11,14 @@ define_webjump("i", "http://www.google.com/images?q=%s",
 	       $alternative = "http://www.google.com/imghp");
 define_webjump("github", "http://github.com/search?q=%s&type=Everything");
 define_webjump("whatsapp", "https://web.whatsapp.com");
+define_webjump(
+    "ruby",
+    function(klass) {
+	var url = 'http://ruby-doc.org/core-2.2.0/'
+	return url + klass.charAt(0).toUpperCase() + klass.slice(1) + '.html';
+    },
+    $alternative = 'http://ruby-doc.org/core-2.2.0/'
+)
 
 // Locaweb stuff
 define_webjump("outlook", "https://outlook.locaweb.com.br");
