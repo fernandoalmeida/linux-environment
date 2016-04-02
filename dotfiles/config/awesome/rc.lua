@@ -16,7 +16,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Tags
-names  = { " 1:web ", " 2:dev ", " 3:term ", " 4:chat ", " 5:play ", "6:other" }
+names  = { " web ", " dev ", " term ", " chat ", " play ", "other" }
 
 layouts = {
    awful.layout.suit.fair,
