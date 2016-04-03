@@ -9,5 +9,5 @@ awful.util.spawn_with_shell("dropbox start")
 awful.util.spawn_with_shell('emacs --daemon')
 
 -- Setup keyboard
-awful.util.spawn_with_shell('keyboard_setup')
+awful.util.spawn_with_shell('keyboard-setup')
 --}}}

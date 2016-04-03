@@ -204,7 +204,7 @@ globalkeys = awful.util.table.join(
       "k",
       function()
 	 result = awful.util.spawn_with_shell(
-	    "source $HOME/.bashrc.d/utils/keyboard_setup.sh && " ..
+	    "source $HOME/.bashrc.d/utils/keyboard-setup.sh && " ..
 	    "keyboard-setup"
 	 )
 	 naughty.notify({title = 'Keyboard Setup', text = result})
