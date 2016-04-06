@@ -14,6 +14,8 @@ docker: utils
 redis: utils
 aws: python
 awesome: bash xscreensaver
+virtualbox: debian_repo
+vagrant: debian_repo virtualbox
 java: bash
 orientdb: java
 
