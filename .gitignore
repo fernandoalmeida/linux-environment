@@ -2,3 +2,4 @@
 *.pub
 tmp/*
 !tmp/.gitkeep
+install/bash/bashrc.d/*rc

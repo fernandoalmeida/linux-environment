@@ -7,3 +7,4 @@ sudo apt-get install -qqy openjdk-$version-jdk
 sudo ln -sfn $path /usr/lib/jvm/default-java
 sudo update-alternatives --set java $path/jre/bin/java
 ln -sfn $(pwd)/install/java/javarc $HOME/.bashrc.d/
+source $(pwd)/install/java/javarc
