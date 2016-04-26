@@ -18,6 +18,7 @@ virtualbox: debian_repo
 vagrant: debian_repo virtualbox
 java: bash
 orientdb: java
+irpf: java
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
