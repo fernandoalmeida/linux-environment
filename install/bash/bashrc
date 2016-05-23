@@ -14,7 +14,7 @@ if [[ -n "$PS1" ]]; then
 	. /etc/bash_completion
     fi
 
-    for f in $(find ~/.bashrc.d/ -type f); do
+    for f in $(find ~/.bashrc.d/ -not -type d); do
     	. $f
     done
 
