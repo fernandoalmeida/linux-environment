@@ -16,12 +16,12 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Tags
-names  = { " web ", " dev ", " term ", " chat ", " play ", "other" }
+names  = { " web ", " dev ", " term ", " chat ", " play ", " read ", "other" }
 
 layouts = {
+   awful.layout.suit.max,
    awful.layout.suit.fair,
-   awful.layout.suit.tile,
-   awful.layout.suit.max
+   awful.layout.suit.tile
 }
 
 tags = {}
