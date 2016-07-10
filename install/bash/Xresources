@@ -3,7 +3,7 @@ URxvt.perl-ext-common: default,matcher,resize-font
 
 ! Xft settings
 Xft.dpi: 96
-Xft.antialias: false
+Xft.antialias: true
 Xft.rgba: rgb
 Xft.hinting: true
 Xft.hintstyle: hintslight
