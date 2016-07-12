@@ -29,3 +29,6 @@ fi
 export SDKMAN_DIR="${HOME}/.sdkman"
 sdkman_init_sh="${HOME}/.sdkman/bin/sdkman-init.sh"
 [[ -s $sdkman_init ]] && source $sdkman_init_sh
+
+export NVM_DIR="/home/fernando/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
