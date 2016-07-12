@@ -15,7 +15,7 @@ redis: utils
 aws: python
 awesome: bash xscreensaver
 virtualbox: debian_repo
-vagrant: debian_repo virtualbox
+vagrant: debian_repo
 java: bash
 orientdb: java
 irpf: java
