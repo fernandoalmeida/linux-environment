@@ -1,16 +1,24 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 github=https://raw.githubusercontent.com
 
 curl -sS $github/exercism/cli-www/master/public/install \
     | sudo sh -
 
-# -----BEGIN PGP MESSAGE-----
-# Version: GnuPG v1
+cat <<EOF | tee ~/.bashrc.d/exercismrc
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
 
-# jA0EAwMCXyW/eRFsrplgyUdFwawvPkFwRA6qOacARrc5qYLZ1U7o4p8kI2VCDSrr
-# rgI9/QN3CRulb28imyqXEslBofBzLxVNvgl7AB8RAIDxlOz/SLyo9w==
-# =N/Da
-# -----END PGP MESSAGE-----
+jA0EAwMCHkAz3tLGMmpgyUcVGFk1zqFYqj8g+HR+my3Ma8ah3/9p1yoxixsMq5RR
+yfo6P06z1IEqesNFUy0LOu4rNn5drt9qDaVrCrsZVhf/8BGp+Pmn7w==
+=CV3/
+-----END PGP MESSAGE-----
 
-exercism configure --key="${EXERCISM_API_KEY:?Need to set EXERCISM_API_KEY}"
+grep \$EXERCISM_API_KEY ~/.exercism.json > /dev/null \\
+    || exercism configure --key="\${EXERCISM_API_KEY:?Unknown EXERCISM_API_KEY}"
+EOF
+
+echo -e "\033[32m\n" \
+     "\n############################################################" \
+     "\n~/.bashrc.d/exercismrc <~~~~~ EDIT IT" \
+     "\n############################################################\033[0m"
