@@ -11,7 +11,7 @@ pushd $(mktemp -d)
   sudo ln -nsf /usr/local/go/bin/go /usr/bin/go
 popd
 
-ln -nsf $(pwd)/install/go/bashrc $HOME/.bashrc.d/go
+ln -nsf $(pwd)/install/go/bashrc $HOME/.bashrc.d/gorc
 source $(pwd)/install/go/bashrc
 
 # gocode is used by many editors to provide intellisense

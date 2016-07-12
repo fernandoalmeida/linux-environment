@@ -8,7 +8,7 @@ pushd $(mktemp -d)
     sudo /opt/google-cloud-sdk/install.sh
 popd
 
-ln -sfn $(pwd)/install/googlecloud/bashrc $HOME/.bashrc.d/googlecloud
+ln -sfn $(pwd)/install/googlecloud/bashrc $HOME/.bashrc.d/googlecloudrc
 
 source $(pwd)/install/googlecloud/bashrc
 
