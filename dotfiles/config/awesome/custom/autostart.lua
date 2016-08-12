@@ -10,4 +10,7 @@ awful.util.spawn_with_shell('emacs --daemon')
 
 -- Setup keyboard
 awful.util.spawn_with_shell('keyboard-setup')
+
+-- RescueTime
+awful.util.spawn_with_shell("rescuetime")
 --}}}
