@@ -13,3 +13,4 @@ ln -sfn $(pwd)/install/googlecloud/bashrc $HOME/.bashrc.d/googlecloudrc
 source $(pwd)/install/googlecloud/bashrc
 
 gcloud init
+gcloud components install kubectl
