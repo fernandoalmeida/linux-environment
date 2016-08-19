@@ -20,6 +20,7 @@ java: bash
 orientdb: java
 irpf: java
 lxc: cgroups
+kubernetes: virtualbox
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
