@@ -16,6 +16,7 @@ packages="
   strace
   grdesktop
   sysstat
+  silversearch-ag
 "
 
 sudo apt-get install -qqy $packages
