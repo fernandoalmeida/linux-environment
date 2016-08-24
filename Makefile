@@ -21,6 +21,7 @@ orientdb: java
 irpf: java
 lxc: cgroups
 kubernetes: virtualbox
+ansible: python
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)

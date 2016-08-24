@@ -1,0 +1,11 @@
+export ANSIBLE_INVENTORY=~/.ansible/hosts
+
+export PYTHONPATH=/opt/ansible/lib
+
+if ! (echo $PATH | grep ansible > /dev/null); then
+  export PATH=/opt/ansible/bin:$PATH
+fi
+
+if ! (echo $MANPATH | grep ansible > /dev/null); then
+  export MANPATH=/opt/ansible/docs:$MANPATH
+fi
