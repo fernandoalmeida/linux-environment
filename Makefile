@@ -22,6 +22,7 @@ irpf: java
 lxc: cgroups
 kubernetes: virtualbox
 ansible: python
+percol: python
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
