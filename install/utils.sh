@@ -17,6 +17,7 @@ packages="
   grdesktop
   sysstat
   silversearch-ag
+  mtr
 "
 
 sudo apt-get install -qqy $packages
