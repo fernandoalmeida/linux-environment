@@ -20,6 +20,7 @@ packages="
   mtr
   ncdu
   iftop
+  nethogs
 "
 
 sudo apt-get install -qqy $packages
