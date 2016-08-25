@@ -18,6 +18,7 @@ packages="
   sysstat
   silversearch-ag
   mtr
+  ncdu
 "
 
 sudo apt-get install -qqy $packages
