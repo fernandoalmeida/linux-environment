@@ -19,6 +19,7 @@ packages="
   silversearch-ag
   mtr
   ncdu
+  iftop
 "
 
 sudo apt-get install -qqy $packages
