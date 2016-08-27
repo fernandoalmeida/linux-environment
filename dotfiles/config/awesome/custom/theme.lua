@@ -16,3 +16,5 @@ beautiful.border_focus  = "#a2bf36"
 theme.bg_focus  = "#a2bf36"
 theme.fg_focus  = "#000000"
 -- }}}
+
+naughty.config.defaults.icon_size = 64
