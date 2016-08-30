@@ -19,6 +19,7 @@ define_webjump(
     },
     $alternative = 'http://ruby-doc.org/core-2.2.0/'
 )
+define_webjump("hangout", "https://plus.google.com/hangouts/_/");
 
 // Locaweb stuff
 define_webjump("outlook", "https://outlook.locaweb.com.br");
