@@ -6,6 +6,7 @@ define_webjump("dropbox", "https://www.dropbox.com/home");
 define_webjump("ifttt", "https://ifttt.com/myrecipes/personal");
 define_webjump("evernote", "https://www.evernote.com/Home.action#x=%s",
 	      $alternative = "https://www.evernote.com/Home.action");
+define_webjump("trello", "https://trello.com")
 define_webjump("t", "http://translate.google.com/translate_t#auto|en|%s");
 define_webjump("i", "http://www.google.com/images?q=%s",
 	       $alternative = "http://www.google.com/imghp");
