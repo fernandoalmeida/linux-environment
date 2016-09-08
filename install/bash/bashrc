@@ -25,7 +25,3 @@ if [[ -n "$PS1" ]]; then
     PS1+="\[\033[0m\]"
     export PS1
 fi
-
-export SDKMAN_DIR="${HOME}/.sdkman"
-sdkman_init_sh="${HOME}/.sdkman/bin/sdkman-init.sh"
-[[ -s $sdkman_init ]] && source $sdkman_init_sh
