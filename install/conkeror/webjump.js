@@ -31,7 +31,7 @@ define_webjump("confluence", "http://confluence.locaweb.com.br/");
 define_webjump("rh", "http://rh.locaweb.com.br/");
 define_webjump("basecamp", "https://basecamp.com/1739668/projects/9206881");
 define_webjump("kanbanery", "https://paaslocaweb.kanbanery.com/projects/45757/board/");
-define_webjump('jira', 'https://locaweb.atlassian.net/browse/HP')
+define_webjump('jira', 'https://locaweb.atlassian.net/browse/NPD')
 define_webjump('fila-beta', 'http://fila-beta.hospedagem.locaweb.com.br/LogGeral.aspx?prov=%s')
 define_webjump('sistema-beta', 'sistema-beta.hospedagem.locaweb.com.br')
 define_webjump('hank', 'https://hank.locaweb.com.br')
