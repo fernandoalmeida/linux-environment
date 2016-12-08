@@ -2,6 +2,7 @@ define_delicious_webjumps('fernandoalmeida');
 
 define_webjump("gmail", "https://mail.google.com/mail/u/0/#search/%s");
 define_webjump("news", "https://news.ycombinator.com");
+define_webjump("reddit", "https://www.reddit.com/top/");
 define_webjump("dropbox", "https://www.dropbox.com/home");
 define_webjump("ifttt", "https://ifttt.com/myrecipes/personal");
 define_webjump("evernote", "https://www.evernote.com/Home.action#x=%s",
