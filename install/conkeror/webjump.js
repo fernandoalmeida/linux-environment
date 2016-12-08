@@ -34,10 +34,34 @@ define_webjump("kanbanery", "https://paaslocaweb.kanbanery.com/projects/45757/bo
 define_webjump('jira', 'https://locaweb.atlassian.net/browse/NPD')
 define_webjump('fila-beta', 'http://fila-beta.hospedagem.locaweb.com.br/LogGeral.aspx?prov=%s')
 define_webjump('sistema-beta', 'sistema-beta.hospedagem.locaweb.com.br')
-define_webjump('hank', 'https://hank.locaweb.com.br')
-define_webjump('hodor', 'https://hodor.locaweb.com.br')
-define_webjump('hosting-panel', 'http://painelhospedagem.locaweb.com.br/databases?per_page=500')
-define_webjump('prov-workers', 'http://prov-workers.hospedagem.locaweb.com.br/search?query=%s')
+
+function locaweb_url(protocol, subdomain, env) {
+    var prefix = {
+	"sysint": ".systemintegration",
+	"qa": ".qa",
+	"prod": ""
+    }
+
+    return protocol + "://" + subdomain + prefix[env] + ".locaweb.com.br";
+}
+
+define_webjump(
+    'hank',
+    function(env) { return locaweb_url('https', 'hank', env) }
+);
+define_webjump(
+    'hodor',
+    function(env) { return locaweb_url('https', 'hodor', env) }
+);
+define_webjump(
+    'panel',
+    function(env) { return locaweb_url('https', 'painelhospedagem', env) }
+);
+define_webjump(
+    'prov-workers',
+    function(env) { return locaweb_url('http', 'prov-workers.hospedagem', env) }
+);
+
 define_webjump('portal-locaweb', 'https://portallocaweb.cservices.com.br/PortalLocaweb/')
 define_webjump('ponto-online', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/just_user/IncluirMarcacaoOnLine.asp')
 define_webjump('ponto-espelho', 'https://portallocaweb.cservices.com.br/WebPontoLocaweb/Relatorios/SolicitaRelatorio.asp?Relatorio=RELRB118')
@@ -46,5 +70,6 @@ define_webjump(
     'leela',
     'http://webleela.service.ita.consul.locaweb.com.br/' // 10.30.124.172
 )
+define_webjump('grafana', 'https://grafana.locaweb.com.br/')
 
 webjumps.g = webjumps.google;
