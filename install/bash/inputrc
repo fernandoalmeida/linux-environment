@@ -13,3 +13,4 @@ set colored-status on
 "\eet":"\C-aRAILS_ENV=test \C-e"
 "\eer":"\C-aENABLE_REMOTE_FACTORY_GIRL=true \C-e"
 "\ekd":"cat /etc/resolv.conf && echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf"
+"\ekk":"kill -9 `pidof `\C-b"
