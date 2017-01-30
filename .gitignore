@@ -4,3 +4,4 @@ tmp/*
 !tmp/.gitkeep
 install/bash/bashrc.d/*rc
 install/pct.sh
+.wercker
