@@ -15,3 +15,4 @@ set colored-status on
 "\ekd":"cat /etc/resolv.conf && echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf"
 "\ekk":"kill -9 `pidof `\C-b"
 "\ekp":"ps faux | grep "
+"\ekP":"ping google.com\n"
