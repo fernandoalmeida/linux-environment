@@ -14,5 +14,5 @@ set colored-status on
 "\eer":"\C-aENABLE_REMOTE_FACTORY_GIRL=true \C-e"
 "\ekd":"cat /etc/resolv.conf && echo 'nameserver 8.8.8.8' | sudo tee /etc/resolv.conf"
 "\ekk":"kill -9 `pidof `\C-b"
-"\ekp":"ps faux | grep "
+"\ekp":"ps faux | grep -v grep | grep -E 'PID|'\C-b"
 "\ekP":"ping google.com\n"
