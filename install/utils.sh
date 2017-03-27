@@ -21,6 +21,7 @@ packages="
   ncdu
   iftop
   nethogs
+  ipcalc
 "
 
 sudo apt-get install -qqy $packages
