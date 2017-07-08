@@ -24,6 +24,7 @@ kubernetes: virtualbox
 ansible: python
 percol: python
 android: java
+react-native: nodejs android
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
