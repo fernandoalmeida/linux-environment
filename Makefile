@@ -23,6 +23,7 @@ lxc: cgroups
 kubernetes: virtualbox
 ansible: python
 percol: python
+android: java
 
 # implicit rules mapped to installation scripts
 install: $(SCRIPTS)
