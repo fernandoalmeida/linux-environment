@@ -2,9 +2,11 @@
 if [[ -n "$PS1" ]]; then
     HISTCONTROL=ignoredups:ignorespace
 
-    projects="$HOME/trabalho/projetos"
-    locaweb="$projects/locaweb"
-    CDPATH="$CDPATH:$projects:$locaweb"
+    projects1="$HOME/trabalho/projetos"
+    projects2="$HOME/external/fernando/trabalho/projetos"
+    locaweb1="$projects1/locaweb"
+    locaweb2="$projects2/locaweb"
+    CDPATH="$CDPATH:$projects1:$projects2:$locaweb1:$locaweb2"
     for l in `ls -d $locaweb/*/`; do CDPATH+=":$l"; done
 
     shopt -s autocd
