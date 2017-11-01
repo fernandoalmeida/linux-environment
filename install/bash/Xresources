@@ -97,3 +97,7 @@ URxvt.iso14755_52: false
 ! Custom bindings
 URxvt.keysym.Control-Meta-p: command:\033]720;10\007 ! scroll up 10 lines
 URxvt.keysym.Control-Meta-n: command:\033]721;10\007 ! scroll down 10 lines
+
+! Rebinding copy & paste
+URxvt.keysym.Control-Meta-w: eval:selection_to_clipboard
+URxvt.keysym.Control-Meta-y: eval:paste_clipboard
