@@ -1,5 +1,5 @@
 ! Perl extensions
-URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.perl-ext-common: default,matcher,resize-font,eval,searchable-scrollback
 
 ! Xft settings
 Xft.dpi: 96
@@ -22,10 +22,6 @@ URxvt*font: xft:Monospace:pixelsize=12
 
 ! Fix font space
 URxvt*letterSpace: -1
-
-! Resize fonts on the fly
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger: C-Up
 
 ! Scrollbar
 URxvt.scrollStyle: rxvt
@@ -95,8 +91,8 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 ! Custom bindings
-URxvt.keysym.Control-Meta-p: command:\033]720;10\007 ! scroll up 10 lines
-URxvt.keysym.Control-Meta-n: command:\033]721;10\007 ! scroll down 10 lines
+URxvt.keysym.Meta-p: eval:scroll_up 10
+URxvt.keysym.Meta-n: eval:scroll_down 10
 
 ! Rebinding copy & paste
 URxvt.keysym.Control-Meta-w: eval:selection_to_clipboard
