@@ -7,7 +7,8 @@ if [[ -n "$PS1" ]]; then
     locaweb1="$projects1/locaweb"
     locaweb2="$projects2/locaweb"
     CDPATH="$CDPATH:$projects1:$projects2:$locaweb1:$locaweb2"
-    for l in `ls -d $locaweb/*/`; do CDPATH+=":$l"; done
+    for l in `ls -d $locaweb1/*/`; do CDPATH+=":$l"; done
+    for l in `ls -d $locaweb2/*/`; do CDPATH+=":$l"; done
 
     shopt -s autocd
     shopt -s cdspell
