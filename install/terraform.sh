@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-version=0.7.2
+version=0.10.7
 file=terraform_${version}_linux_amd64.zip
 
 pushd $(mktemp -d)
