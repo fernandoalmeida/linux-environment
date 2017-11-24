@@ -1,7 +1,6 @@
 set editing-mode emacs
 set bell-style visible
 set completion-ignore-case on
-set completion-map-case on
 set history-size -1
 set keyseq-timeout 1000
 set colored-status on
