@@ -45,6 +45,9 @@ pushd $(mktemp -d)
   more details:
   https://facebook.github.io/react-native/docs/getting-started.html#2-install-the-android-sdk
 
+  running on phisical device:
+  https://facebook.github.io/react-native/docs/running-on-device.html
+
 __EOF
 popd
 
