@@ -22,6 +22,7 @@ packages="
   iftop
   nethogs
   ipcalc
+  atop
 "
 
 sudo apt-get install -qqy $packages
