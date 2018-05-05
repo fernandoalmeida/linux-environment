@@ -142,10 +142,15 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
-      { modkey },
-      "r",
+      { modkey, "Shift" },  "r",
       function ()
          mypromptbox[mouse.screen]:run()
+      end
+   ),
+   awful.key(
+      { modkey },  "r",
+      function()
+	 menubar.show()
       end
    ),
    awful.key(
