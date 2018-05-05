@@ -7,9 +7,10 @@ if [[ -n "$PS1" ]]; then
 
     for group in `ls -d $projects/*/`; do
         CDPATH+=":$group";
-        for project in `ls -d $group/*/`; do
-            CDPATH+=":$project";
-        done
+    done
+
+    for team in `ls -d $projects/locaweb/*/`; do
+        CDPATH+=":$team";
     done
 
     shopt -s autocd
