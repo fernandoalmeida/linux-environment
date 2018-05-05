@@ -8,7 +8,6 @@ awful.rules = require("awful.rules")
 vicious = require("vicious")
 
 require("awful.autofocus")
-require("debian.menu")
 
 terminal = "urxvt"
 editor = os.getenv("EDITOR") or "emacs"

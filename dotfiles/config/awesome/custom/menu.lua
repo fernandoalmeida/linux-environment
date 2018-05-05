@@ -14,7 +14,6 @@ mymainmenu = awful.menu(
          { "Conkeror", "conkeror" },
          { "Spotify", "spotify" },
          { "", nil },
-         { "Debian", debian.menu.Debian_menu.Debian },
          { "Awesome", myawesomemenu, beautiful.awesome_icon },
          { "", nil },
          { "screen lock", "xscreensaver-command -lock" },
