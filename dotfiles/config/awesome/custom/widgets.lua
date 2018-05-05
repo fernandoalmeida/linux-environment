@@ -7,6 +7,7 @@ text_widget = function(value)
 end
 
 require("custom/widgets/taglist_widget")
+require("custom/widgets/tasklist_widget")
 require("custom/widgets/date_widget")
 require("custom/widgets/battery_widget")
 require("custom/widgets/memory_widget")
@@ -30,6 +31,7 @@ for s = 1, screen.count() do
    left_layout:add(mylauncher)
    left_layout:add(taglist_widget(s))
    left_layout:add(mypromptbox[s])
+   left_layout:add(tasklist_widget(s))
 
    local right_layout = wibox.layout.fixed.horizontal()
    if s == 1 then
