@@ -142,6 +142,28 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
+      { modkey },
+      "m",
+        function ()
+	   local c = client.focus
+	   if c then
+	      c.minimized = true
+	   end
+        end
+   ),
+   awful.key(
+      { modkey, "Control" },
+      "m",
+      function ()
+	 local c = awful.client.restore()
+	 -- Focus restored client
+	 if c then
+	    client.focus = c
+	    c:raise()
+	 end
+      end
+   ),
+    awful.key(
       { modkey, "Shift" },  "r",
       function ()
          mypromptbox[mouse.screen]:run()
