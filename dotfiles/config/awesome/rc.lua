@@ -15,7 +15,7 @@ editor_cmd = terminal .. " -e " .. editor
 modkey = "Mod4"
 
 -- Tags
-names  = { " web ", " dev ", " term ", " chat ", " play ", " read ", "other" }
+names  = { " web ", " dev ", " term ", " chat ", " play ", " other " }
 
 layouts = {
    awful.layout.suit.max,
