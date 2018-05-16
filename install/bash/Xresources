@@ -18,10 +18,10 @@ URxvt.lineSpace: 0
 
 ! Fonts
 URxvt.allow_bold: false
-URxvt.font: xft:NotoSansMono-Regular:size=8.5
+URxvt.font: xft:DejaVuSansMono:size=8.5
 
 ! Fix font space
-URxvt*letterSpace: -1
+! URxvt*letterSpace: -1
 
 ! Scrollbar
 URxvt.scrollStyle: rxvt
