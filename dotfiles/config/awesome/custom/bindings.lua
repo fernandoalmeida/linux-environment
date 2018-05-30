@@ -172,7 +172,13 @@ globalkeys = awful.util.table.join(
    awful.key(
       { modkey },  "r",
       function()
-	 menubar.show()
+	 awful.util.spawn("rofi -show run", false)
+      end
+   ),
+   awful.key(
+      { modkey },  "o",
+      function()
+	 awful.util.spawn("rofi -show window", false)
       end
    ),
    awful.key(
