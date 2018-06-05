@@ -1,7 +1,7 @@
 -- {{{ Autostarts
 function run_once(name, command)
    awful.util.spawn_with_shell(
-      "pgrep " .. name .. " || (command -v " .. name .. " && " .. command .. ")"
+      "ps faux | grep '" .. name .. "' | grep -v grep || (command -v " .. name .. " && " .. command .. ")"
    )
 end
 
@@ -14,9 +14,15 @@ run_once("xscreensaver", "xscreensaver -nosplash")
 -- Dropbox
 run_once("dropbox", "dropbox start")
 
--- Volume icon
-run_once('volumeicon', 'volumeicon')
-
 -- RescueTime
 run_once("rescuetime", "rescuetime")
+
+-- Bluetooth Manager
+run_once('blueberry-tray', 'blueberry-tray')
+
+-- Sound Switcher
+run_once('indicator-sound-switcher', 'indicator-sound-switcher')
+
+-- Volume control
+run_once('volumeicon', 'volumeicon')
 --}}}
