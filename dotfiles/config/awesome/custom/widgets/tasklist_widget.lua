@@ -56,9 +56,13 @@ function tasklist_widget(s)
       )
    )
 
-   return awful.widget.tasklist(
+   local tasklist = awful.widget.tasklist(
       s,
       awful.widget.tasklist.filter.currenttags,
       widget.buttons
    )
+
+   tasklist:set_max_widget_size(100)
+
+   return tasklist
 end
