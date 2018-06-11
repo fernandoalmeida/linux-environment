@@ -12,10 +12,8 @@ require("custom/widgets/date_widget")
 require("custom/widgets/battery_widget")
 require("custom/widgets/memory_widget")
 require("custom/widgets/cpu_widget")
-require("custom/widgets/volume_widget")
 require("custom/widgets/network_widget")
 require("custom/widgets/temp_widget")
-require("custom/widgets/tasklist_widget")
 require("custom/widgets/layoutbox_widget")
 
 mywibox = {}
@@ -42,7 +40,6 @@ for s = 1, screen.count() do
    right_layout:add(cpu_widget())
    right_layout:add(memory_widget())
    right_layout:add(battery_widget())
-   right_layout:add(volume_widget())
    right_layout:add(date_widget())
    right_layout:add(layoutbox_widget(s))
 
