@@ -1,6 +1,7 @@
 TMP := tmp
 VPATH := $(TMP)
 SCRIPTS := $(basename $(shell ls -p install | egrep -v /$))
+ARCH := $(shell find install/arch -name *.sh | cut -f 2,3 -d / | cut -f 1 -d .)
 .DEFAULT_GOAL := install
 
 # dependencies mapping
@@ -27,6 +28,10 @@ android: java
 react-native: nodejs android
 
 # implicit rules mapped to installation scripts
+$(ARCH):
+	install/$@.sh
+	@touch $(TMP)/$@
+
 install: $(SCRIPTS)
 $(SCRIPTS):
 	./install/$@.sh
