@@ -28,6 +28,7 @@ android: java
 react-native: nodejs android
 
 # implicit rules mapped to installation scripts
+arch/nvm: arch/aura
 arch/node: arch/nvm
 $(ARCH):
 	install/$@.sh
