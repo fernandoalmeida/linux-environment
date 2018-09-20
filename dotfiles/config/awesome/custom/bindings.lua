@@ -248,9 +248,42 @@ globalkeys = awful.util.table.join(
       "Print",
       function ()
 	 awful.util.spawn_with_shell(
+	    "file=/tmp/" ..
+	    "screenshot-$(date --iso-8601=s | tr ':' '-').png && " ..
+	    "import -window root -quality 98 -quiet $file"
+	 )
+      end
+   ),
+   awful.key(
+      { 'Control' },
+      "Print",
+      function ()
+	 awful.util.spawn_with_shell(
 	    "file=Dropbox/fernando/screenshots/" ..
 	    "screenshot-$(date --iso-8601=s | tr ':' '-').png && " ..
 	    "import -window root -quality 98 -quiet $file"
+	 )
+      end
+   ),
+   awful.key(
+      { 'Alt' },
+      "Print",
+      function ()
+	 awful.util.spawn_with_shell(
+	    "file=/tmp/" ..
+	    "screenshot-$(date --iso-8601=s | tr ':' '-').png && " ..
+	    "import -quality 98 $file"
+	 )
+      end
+   ),
+   awful.key(
+      { 'Control', 'Alt' },
+      "Print",
+      function ()
+	 awful.util.spawn_with_shell(
+	    "file=Dropbox/fernando/screenshots/" ..
+	    "screenshot-$(date --iso-8601=s | tr ':' '-').png && " ..
+	    "import -quality 98 $file"
 	 )
       end
    )

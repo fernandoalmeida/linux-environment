@@ -30,6 +30,8 @@ react-native: nodejs android
 # implicit rules mapped to installation scripts
 arch/nvm: arch/aura
 arch/node: arch/nvm
+arch/awesome: arch/imagemagick
+
 $(ARCH):
 	install/$@.sh
 	@touch $(TMP)/$@
