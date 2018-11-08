@@ -1,0 +1,10 @@
+[Unit]
+Description=Custom cgroups configs/rules
+
+[Service]
+Type=oneshot
+ExecStartPre=/usr/bin/cgconfigparser -l /etc/cgconfig.conf
+ExecStart=/usr/bin/cgrulesengd
+
+[Install]
+WantedBy=multi-user.target
