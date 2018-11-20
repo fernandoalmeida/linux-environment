@@ -32,6 +32,7 @@ arch/awesome: arch/imagemagick
 arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
+arch/toggl: arch/aura
 
 $(ARCH):
 	install/$@.sh
