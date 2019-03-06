@@ -33,6 +33,7 @@ arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
 arch/toggl: arch/aura
+arch/wakatime: arch/aura
 
 $(ARCH):
 	install/$@.sh
