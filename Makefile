@@ -34,6 +34,7 @@ arch/nvm: arch/aura
 arch/pytorch: arch/python
 arch/toggl: arch/aura
 arch/wakatime: arch/aura
+arch/skype: arch/aura
 
 $(ARCH):
 	install/$@.sh
