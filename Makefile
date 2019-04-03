@@ -35,9 +35,9 @@ arch/elixir: arch/erlang
 arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
+arch/skype: arch/aura
 arch/toggl: arch/aura
 arch/wakatime: arch/aura
-arch/skype: arch/aura
 
 $(ARCH):
 	install/$@.sh
