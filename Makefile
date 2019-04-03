@@ -6,9 +6,9 @@ DEBIAN := $(shell find install/debian -name *.sh | cut -f 2,3 -d / | cut -f 1 -d
 .DEFAULT_GOAL := install
 
 # dependencies mapping
-git: debian/bash
-ruby: debian/bash utils git
-emacs: debian/bash utils git
+debian/git: debian/bash
+ruby: debian/bash utils debian/git
+emacs: debian/bash utils debian/git
 mongodb: utils
 postgresql: utils
 rabbitmq: utils
