@@ -2,22 +2,23 @@ TMP := tmp
 VPATH := $(TMP)
 SCRIPTS := $(basename $(shell ls -p install | egrep -v /$))
 ARCH := $(shell find install/arch -name *.sh | cut -f 2,3 -d / | cut -f 1 -d .)
+DEBIAN := $(shell find install/debian -name *.sh | cut -f 2,3 -d / | cut -f 1 -d .)
 .DEFAULT_GOAL := install
 
 # dependencies mapping
-git: bash
-ruby: bash utils git
-emacs: bash utils git
+git: debian/bash
+ruby: debian/bash utils git
+emacs: debian/bash utils git
 mongodb: utils
 postgresql: utils
 rabbitmq: utils
 docker: utils
 redis: utils
 aws: python
-awesome: bash xscreensaver
+awesome: debian/bash xscreensaver
 virtualbox: debian_repo
 vagrant: debian_repo
-java: bash
+java: debian/bash
 orientdb: java
 irpf: java
 lxc: cgroups
@@ -39,6 +40,11 @@ arch/skype: arch/aura
 $(ARCH):
 	install/$@.sh
 	@touch $(TMP)/$@
+
+$(DEBIAN):
+	install/$@.sh
+	@touch $(TMP)/$@
+
 
 install: $(SCRIPTS)
 $(SCRIPTS):
