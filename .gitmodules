@@ -4,3 +4,6 @@
 [submodule "install/conkeror/themes/conkeror-theme-zenburn"]
 	path = install/conkeror/themes/conkeror-theme-zenburn
 	url = https://github.com/ivoarch/conkeror-theme-zenburn.git
+[submodule "install/arch/awesome/themes"]
+	path = install/arch/awesome/themes
+	url = https://github.com/mikar/awesome-themes.git
