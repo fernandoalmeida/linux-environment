@@ -2,6 +2,7 @@
 
 sudo apt-get install -qqy awesome awesome-extra
 
-ln -sfn $(pwd)/dotfiles/config/awesome $HOME/.config/
+mkdir -p $HOME/.config
+ln -sfn $(pwd)/install/debian/awesome $HOME/.config/
 
 sudo chmod a+s /sbin/shutdown
