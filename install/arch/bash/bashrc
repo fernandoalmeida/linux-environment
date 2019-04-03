@@ -1,0 +1,33 @@
+# If not running interactively, don't do anything
+if [[ -n "$PS1" ]]; then
+    HISTCONTROL=ignoredups:ignorespace
+
+    projects="$HOME/code"
+    CDPATH="$CDPATH:$projects"
+
+    for group in `ls -d $projects/*/`; do
+        CDPATH+=":$group";
+    done
+
+    for customer in `ls -d $projects/brainn/*/`; do
+        CDPATH+=":$customer";
+    done
+
+    shopt -s autocd
+    shopt -s cdspell
+
+    if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+	. /etc/bash_completion
+    fi
+
+    for f in $(find ~/.bashrc.d/ -not -type d); do
+    	. $f
+    done
+
+    PS1="\n\[\033[32m\][\w]"
+    PS1+="\[\033[0m\]\n"
+    PS1+="\[\033[1;36m\]\u"
+    PS1+="\[\033[1;33m\] -> "
+    PS1+="\[\033[0m\]"
+    export PS1
+fi
