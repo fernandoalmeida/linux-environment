@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
-sudo pacman -Sy rxvt-unicode bash-completion
+sudo pacman -Sy rxvt-unicode  bash-completion
+sudo aura -Ay urxvt-resize-font-git
 
 if [[ -d $HOME/.bashrc.d ]]; then
     mv $HOME/.bashrc.d{,.bkp-$(date --iso-8601=seconds)}
