@@ -30,6 +30,7 @@ react-native: nodejs android
 
 # implicit rules mapped to installation scripts
 arch/awesome: arch/imagemagick
+arch/emacs: arch/bash arch/git arch/ag arch/aspell
 arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python

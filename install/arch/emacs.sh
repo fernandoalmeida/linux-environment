@@ -1,10 +1,8 @@
 #!/bin/bash -e
 
-: ${EMACS_DOTFILES:='https://github.com/fernandoalmeida/.emacs.d.git'}
+: ${EMACS_DOTFILES:='git@github.com:fernandoalmeida/.emacs.d.git'}
 
-sudo pacman -Sy emacs \
-                aspell aspell-en aspell-pt \
-                the_silver_searcher
+sudo pacman -Sy emacs
 
 ln -sfn $(pwd)/install/arch/emacs/emacsrc $HOME/.bashrc.d/
 
