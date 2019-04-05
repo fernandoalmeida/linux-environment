@@ -24,7 +24,7 @@ run_once('blueberry-tray', 'blueberry-tray')
 -- run_once('indicator-sound-switcher', 'indicator-sound-switcher')
 
 -- Volume control
--- run_once('volumeicon', 'volumeicon')
+run_once('volumeicon', 'volumeicon')
 
 -- Toggl
 -- run_once('toggldesktop', 'toggldesktop')
