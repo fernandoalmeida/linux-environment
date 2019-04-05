@@ -1,0 +1,20 @@
+[settings]
+debug = false
+api_key = $WAKATIME_API_KEY
+hide_file_names = false
+hide_project_names = false
+exclude =
+    ^COMMIT_EDITMSG$
+    ^TAG_EDITMSG$
+    ^/var/(?!www/).*
+    ^/etc/
+include =
+    .*
+include_only_with_project_file = false
+offline = true
+no_ssl_verify = false
+ssl_certs_file =
+timeout = 30
+hostname = arch
+[git]
+disable_submodules = true
