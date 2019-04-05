@@ -9,7 +9,7 @@ end
 awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/keyboard-setup.sh')
 
 -- xscreensaver
--- run_once("xscreensaver", "xscreensaver -nosplash")
+run_once("xscreensaver", "xscreensaver -nosplash")
 
 -- Dropbox
 -- run_once("dropbox", "dropbox start")
