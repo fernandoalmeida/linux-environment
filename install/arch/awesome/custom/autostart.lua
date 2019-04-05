@@ -18,7 +18,7 @@ awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/keyboard-setup.sh')
 -- run_once("rescuetime", "rescuetime")
 
 -- Bluetooth Manager
--- run_once('blueberry-tray', 'blueberry-tray')
+run_once('blueberry-tray', 'blueberry-tray')
 
 -- Sound Switcher
 -- run_once('indicator-sound-switcher', 'indicator-sound-switcher')
