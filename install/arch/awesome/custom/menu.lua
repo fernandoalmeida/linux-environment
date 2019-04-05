@@ -19,10 +19,10 @@ mymainmenu = awful.menu(
          { "screen lock", "xscreensaver-command -lock" },
          { "logout", awesome.quit },
          { "", nil },
-         { "suspend", "sudo systemctl suspend" },
-         { "hibernate", "sudo systemctl hibernate" },
-         { "reboot", "sudo systemctl reboot" },
-         { "shutdown", "sudo systemctl poweroff" }
+         { "suspend", "systemctl suspend" },
+         { "hibernate", "systemctl hibernate" },
+         { "reboot", "systemctl reboot" },
+         { "shutdown", "systemctl poweroff" }
       }
    }
 )
