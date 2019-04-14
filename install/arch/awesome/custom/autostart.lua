@@ -15,7 +15,7 @@ run_once("xscreensaver", "xscreensaver -nosplash")
 -- run_once("dropbox", "dropbox start")
 
 -- RescueTime
--- run_once("rescuetime", "rescuetime")
+run_once("rescuetime", "rescuetime")
 
 -- Bluetooth Manager
 run_once('blueberry-tray', 'blueberry-tray')

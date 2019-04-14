@@ -30,12 +30,13 @@ react-native: nodejs android
 
 # implicit rules mapped to installation scripts
 arch/awesome: arch/bash arch/lua arch/imagemagick arch/rofi
-arch/emacs: arch/bash arch/git arch/ag arch/aspell
 arch/bash: arch/aura
 arch/elixir: arch/erlang
+arch/emacs: arch/bash arch/git arch/ag arch/aspell
 arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
+arch/rescuetime: arch/aura
 arch/skype: arch/aura
 arch/toggl: arch/aura
 arch/wakatime: arch/aura
