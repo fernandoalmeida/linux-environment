@@ -12,7 +12,7 @@ awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/keyboard-setup.sh')
 run_once("xscreensaver", "xscreensaver -nosplash")
 
 -- Dropbox
--- run_once("dropbox", "dropbox start")
+awful.util.spawn_with_shell('$HOME/.dropbox-dist/dropboxd')
 
 -- RescueTime
 run_once("rescuetime", "rescuetime")
