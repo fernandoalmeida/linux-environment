@@ -1,0 +1,37 @@
+Title summary (Capitalized, short, 50 chars or less)
+
+**What is the content type?**
+
+- Feature
+- Bugfix
+- Improvement
+- Documentation
+
+**Why is this change necessary?**
+
+# This question tells reviewers of your pull request what to
+# expect in the commit, allowing them to more easily identify and
+# point out unrelated changes.
+
+**How does it address the issue?**
+
+# Describe, at a high level, what was done to affect change.
+#   Ex:
+#   - Introduce a red/black tree to increase search speed
+#   - Remove <troublesome lib X>, which was causing
+#     <specific description of issue introduced by lib>
+#   - Add <lib X>, because it helps to <specific description of why the lib was added>
+
+**What side effects does this change have?**
+
+**Does this change include database migrations? (If yes please list)**
+
+**Does this change include new rake tasks or environment variables? (If yes please list)**
+
+**Links**
+
+- card
+- issue
+- discussions
+- docs/references
+- etc
