@@ -1,3 +1,3 @@
 #!/bin/bash -e
 
-sudo pacman -Sy volumeicon
+sudo pacman -Sy volumeicon pavucontrol indicator-sound-switcher

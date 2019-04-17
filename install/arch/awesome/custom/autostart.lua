@@ -21,7 +21,7 @@ run_once("rescuetime", "rescuetime")
 run_once('blueberry-tray', 'blueberry-tray')
 
 -- Sound Switcher
--- run_once('indicator-sound-switcher', 'indicator-sound-switcher')
+run_once('indicator-sound-switcher', 'indicator-sound-switcher')
 
 -- Volume control
 run_once('volumeicon', 'volumeicon')
