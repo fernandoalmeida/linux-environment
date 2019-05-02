@@ -38,6 +38,7 @@ arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
 arch/rescuetime: arch/aura
+arch/slack: arch/aura
 arch/skype: arch/aura
 arch/toggl: arch/aura
 arch/wakatime: arch/bash arch/python
