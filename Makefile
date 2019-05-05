@@ -29,6 +29,7 @@ android: java
 react-native: nodejs android
 
 # implicit rules mapped to installation scripts
+arch/android: arch/aura
 arch/awesome: arch/bash arch/lua arch/imagemagick arch/rofi
 arch/bash: arch/aura
 arch/dropbox: arch/wget
