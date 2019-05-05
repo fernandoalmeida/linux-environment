@@ -43,6 +43,7 @@ arch/slack: arch/aura
 arch/skype: arch/aura
 arch/toggl: arch/aura
 arch/wakatime: arch/bash arch/python
+arch/flutter: arch/bash arch/curl arch/git arch/zip arch/xz arch/glu arch/android
 
 $(ARCH):
 	install/$@.sh
