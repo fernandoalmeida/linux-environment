@@ -19,8 +19,10 @@ names  = { " web ", " dev ", " term ", " chat ", " play ", " other " }
 
 layouts = {
    awful.layout.suit.max,
+   awful.layout.suit.floating,
    awful.layout.suit.fair,
-   awful.layout.suit.tile
+   awful.layout.suit.tile,
+   awful.layout.suit.tile.top,
 }
 
 tags = {}
@@ -35,4 +37,3 @@ require("custom/widgets")
 require("custom/signals")
 require("custom/bindings")
 require("custom/autostart")
-require("custom/rules")

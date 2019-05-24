@@ -417,4 +417,12 @@ awful.rules.rules = {
 	 buttons = clientbuttons
       }
    },
+   {
+      rule_any = {
+         name = { ".*Emulator.*" }
+      },
+      properties = {
+         floating = true,
+      }
+   },
 }
