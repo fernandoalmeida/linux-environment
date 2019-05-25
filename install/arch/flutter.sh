@@ -12,4 +12,6 @@ popd
 ln -sf $(pwd)/install/arch/flutter/bashrc ~/.bashrc.d/flutter
 source ~/.bashrc.d/flutter
 
+flutter packages pub global activate devtools
+
 flutter doctor
