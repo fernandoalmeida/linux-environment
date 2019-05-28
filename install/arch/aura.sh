@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 pushd $(mktemp -d)
-  git clone https://aur.archlinux.org/aura-bin.git
-  cd aura-bin
+  git clone https://aur.archlinux.org/aura-git.git
+  cd aura-git
   makepkg
-  sudo pacman -U aura-bin-*.tar.xz
+  sudo pacman -U aura-git-*.tar.xz
 popd
