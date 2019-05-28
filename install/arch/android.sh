@@ -3,7 +3,7 @@
 sudo pacman -Sy android-tools
 sudo aura -Ay android-studio
 
-ln -sf $(pwd)/install/arch/android/bashrc ~/.bashrc.d/android
+ln -sf $(pwd)/install/arch/android/bashrc ~/.bashrc.d/custom/android
 
 cat <<INSTRUCTIONS
 

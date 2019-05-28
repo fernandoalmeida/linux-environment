@@ -9,8 +9,8 @@ pushd $(mktemp -d)
   sudo chown $USER -R /opt/flutter
 popd
 
-ln -sf $(pwd)/install/arch/flutter/bashrc ~/.bashrc.d/flutter
-source ~/.bashrc.d/flutter
+ln -sf $(pwd)/install/arch/flutter/bashrc $HOME/.bashrc.d/custom/flutter
+source ~/.bashrc.d/custom/flutter
 
 flutter packages pub global activate devtools
 

@@ -5,6 +5,5 @@ tmp/*
 !tmp/arch
 tmp/arch/*
 !tmp/arch/.gitkeep
-install/bash/bashrc.d/*rc
 install/pct.sh
 .wercker

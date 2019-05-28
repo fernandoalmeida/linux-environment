@@ -8,5 +8,3 @@ keyboard-setup() {
 	-variant intl \
 	-option ctrl:nocaps
 }
-
-keyboard-setup

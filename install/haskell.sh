@@ -3,7 +3,7 @@
 # The recommend way to install Haskell on your computer is through the
 # Haskell Platform (https://wiki.haskell.org/Implementations)
 sudo apt-get install -qqy haskell-platform
-ln -sf $(pwd)/install/haskell/haskellrc $HOME/.bashrc.d/
+ln -sf $(pwd)/install/haskell/haskellrc $HOME/.bashrc.d/custom/
 
 if [ ! -f $HOME/.cabal/packages/hackage.haskell.org/00-index.cache ] ; then
     cabal update

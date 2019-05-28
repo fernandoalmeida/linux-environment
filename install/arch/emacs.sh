@@ -4,7 +4,7 @@
 
 sudo pacman -Sy emacs
 
-ln -sfn $(pwd)/install/arch/emacs/emacsrc $HOME/.bashrc.d/
+ln -sfn $(pwd)/install/arch/emacs/emacsrc $HOME/.bashrc.d/custom/
 
 if [ ! -d $HOME/.emacs.d ] ; then
   git clone $EMACS_DOTFILES $HOME/.emacs.d
