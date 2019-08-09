@@ -44,6 +44,7 @@ arch/skype: arch/aura
 arch/toggl: arch/aura
 arch/wakatime: arch/bash arch/python
 arch/flutter: arch/bash arch/curl arch/git arch/zip arch/xz arch/glu arch/android
+arch/xmind: arch/aura
 
 $(ARCH):
 	install/$@.sh
