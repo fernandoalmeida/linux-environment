@@ -1,31 +1,29 @@
 # linux-environment
 
-This repo started out with just my dotfiles, but someday I changed to
-include configuration scripts of my development environment (packages,
-libs, editor, etc).
-
-I created a Makefile to define configuration targets and dependencies
-beteween them.
-
-I also created a Dockerfile to test them always in a clean
-environment.
+A simple Linux environment setup using shell script (Bash) and Make.
 
 ## Usage
 
-### In a local machine
+### Arch Linux
 
-To install/configure all from scratch
+```
+make arch/bash
+make arch/git
+make arch/emacs
+make arch/elixir arch/rust arch/lua
+make arch/kubernetes
+make arch/pytorch arch/jupyter
+make arch/flutter arch/android
+# ...
+```
 
-	make install
+### Debian
 
-To install/configure specific targets
-
-    make git
-    make ruby
-	make emacs
-	# ...
-
-### In a Docker container
-
-    make build
-    make run
+```
+make debian/ruby debian/nodejs
+make debian/docker
+make debian/aws debian/googlecloud
+make debian/postgresql debian/redis
+make debian/react-native
+# ...
+```

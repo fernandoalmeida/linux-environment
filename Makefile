@@ -7,26 +7,26 @@ DEBIAN := $(shell find install/debian -name *.sh | cut -f 2,3 -d / | cut -f 1 -d
 
 # dependencies mapping
 debian/git: debian/bash
-ruby: debian/bash utils debian/git
-emacs: debian/bash utils debian/git
-mongodb: utils
-postgresql: utils
-rabbitmq: utils
-docker: utils
-redis: utils
-aws: python
-awesome: debian/bash xscreensaver
-virtualbox: debian_repo
-vagrant: debian_repo
-java: debian/bash
-orientdb: java
-irpf: java
-lxc: cgroups
-kubernetes: virtualbox
-ansible: python
-percol: python
-android: java
-react-native: nodejs android
+debian/ruby: debian/bash debian/utils debian/git
+debian/emacs: debian/bash debian/utils debian/git
+debian/mongodb: debian/utils
+debian/postgresql: debian/utils
+debian/rabbitmq: debian/utils
+debian/docker: debian/utils
+debian/redis: debian/utils
+debian/aws: debian/python
+debian/awesome: debian/bash xscreensaver
+debian/virtualbox: debian/debian_repo
+debian/vagrant: debian/debian_repo
+debian/java: debian/bash
+debian/orientdb: debian/java
+debian/irpf: debian/java
+debian/lxc: debian/cgroups
+debian/kubernetes: debian/virtualbox
+debian/ansible: debian/python
+debian/percol: debian/python
+debian/android: debian/java
+debian/react-native: debian/nodejs debian/android
 
 # implicit rules mapped to installation scripts
 arch/android: arch/aura

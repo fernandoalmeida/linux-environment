@@ -1,8 +1,8 @@
 [submodule "dotfiles/config/awesome/themes"]
 	path = dotfiles/config/awesome/themes
 	url = https://github.com/mikar/awesome-themes.git
-[submodule "install/conkeror/themes/conkeror-theme-zenburn"]
-	path = install/conkeror/themes/conkeror-theme-zenburn
+[submodule "install/debian/conkeror/themes/conkeror-theme-zenburn"]
+	path = install/debian/conkeror/themes/conkeror-theme-zenburn
 	url = https://github.com/ivoarch/conkeror-theme-zenburn.git
 [submodule "install/arch/awesome/themes"]
 	path = install/arch/awesome/themes
