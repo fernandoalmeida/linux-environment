@@ -40,6 +40,7 @@ arch/exercism: arch/aura
 arch/node: arch/nvm
 arch/nvm: arch/aura
 arch/pytorch: arch/python
+arch/rbenv: arch/aura
 arch/rescuetime: arch/aura
 arch/slack: arch/aura
 arch/skype: arch/aura
