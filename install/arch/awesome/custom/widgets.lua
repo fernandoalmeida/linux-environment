@@ -35,8 +35,8 @@ for s = 1, screen.count() do
    if s == 1 then
       right_layout:add(wibox.widget.systray())
    end
-   right_layout:add(network_widget())
-   right_layout:add(temp_widget())
+   -- right_layout:add(network_widget())
+   -- right_layout:add(temp_widget())
    right_layout:add(cpu_widget())
    right_layout:add(memory_widget())
    right_layout:add(battery_widget())
