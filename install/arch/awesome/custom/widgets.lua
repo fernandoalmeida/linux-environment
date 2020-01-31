@@ -9,6 +9,7 @@ end
 require("custom/widgets/taglist_widget")
 require("custom/widgets/tasklist_widget")
 require("custom/widgets/date_widget")
+require("custom/widgets/time_widget")
 require("custom/widgets/battery_widget")
 require("custom/widgets/memory_widget")
 require("custom/widgets/cpu_widget")
@@ -41,6 +42,8 @@ for s = 1, screen.count() do
    right_layout:add(memory_widget())
    right_layout:add(battery_widget())
    right_layout:add(date_widget())
+   right_layout:add(time_widget(" BR: ", 0))
+   right_layout:add(time_widget(" UK: ", 3))
    right_layout:add(layoutbox_widget(s))
 
     local layout = wibox.layout.align.horizontal()

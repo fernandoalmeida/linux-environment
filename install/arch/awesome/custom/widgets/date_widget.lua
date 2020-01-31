@@ -5,7 +5,7 @@ function date_widget()
    vicious.register(
       widget,
       vicious.widgets.date,
-      text_widget("%a - %d/%m - %T"),
+      text_widget("%a - %d/%m"),
       1
    )
 
