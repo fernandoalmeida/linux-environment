@@ -33,7 +33,7 @@ arch/android: arch/aura
 arch/awesome: arch/bash arch/lua arch/imagemagick arch/rofi
 arch/bash: arch/aura
 arch/dropbox: arch/wget
-arch/elixir: arch/erlang
+arch/elixir: arch/git arch/erlang
 arch/emacs: arch/bash arch/git arch/ag arch/aspell
 arch/exercism: arch/aura
 arch/jupyter: arch/python
