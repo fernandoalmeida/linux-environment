@@ -233,14 +233,25 @@ globalkeys = awful.util.table.join(
       end
    ),
    awful.key(
+      { modkey, "Shift" },
+      "k",
+      function()
+	 awful.util.spawn_with_shell(
+	    "source $HOME/.bashrc.d/utils/setup-international-keyboard.sh && " ..
+	    "setup-international-keyboard"
+	 )
+         naughty.notify({ title = "International Keyboard Configured", message = "You're idling", timeout = 3 })
+      end
+   ),
+   awful.key(
       { modkey, "Control", "Shift" },
       "k",
       function()
 	 result = awful.util.spawn_with_shell(
-	    "source $HOME/.bashrc.d/utils/keyboard-setup.sh && " ..
-	    "keyboard-setup"
+	    "source $HOME/.bashrc.d/utils/setup-abnt-keyboard.sh && " ..
+	    "setup-abnt-keyboard"
 	 )
-	 naughty.notify({title = 'Keyboard Setup', text = result})
+         naughty.notify({ title = "ABNT Keyboard Configured", message = "You're idling", timeout = 3 })
       end
    ),
    awful.key(

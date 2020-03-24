@@ -6,7 +6,8 @@ function run_once(name, command)
 end
 
 -- Setup keyboard
-awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/keyboard-setup.sh')
+awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/setup-abnt-keyboard.sh')
+awful.util.spawn_with_shell('$HOME/.bashrc.d/utils/setup-international-keyboard.sh')
 
 -- xscreensaver
 run_once("xscreensaver", "xscreensaver -nosplash")

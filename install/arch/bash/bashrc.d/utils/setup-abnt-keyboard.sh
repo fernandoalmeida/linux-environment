@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-keyboard-setup() {
+setup-abnt-keyboard() {
     setxkbmap \
 	-rules evdev \
 	-model abnt2 \
@@ -8,5 +8,3 @@ keyboard-setup() {
 	-variant abnt2 \
 	-option ctrl:nocaps
 }
-
-keyboard-setup
