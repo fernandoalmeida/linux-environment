@@ -36,6 +36,7 @@ arch/dropbox: arch/wget
 arch/elixir: arch/git arch/erlang
 arch/emacs: arch/bash arch/git arch/ag arch/aspell
 arch/exercism: arch/aura
+arch/gigalixir: arch/python
 arch/jupyter: arch/python
 arch/kubernetes: arch/aura arch/virtualbox
 arch/node: arch/nvm
