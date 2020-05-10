@@ -11,3 +11,7 @@ tramp
 .org-id-locations
 *_archive
 .dir-locals.el
+.log/tsserver.log
+.log/ti-*.log
+
+.elixir_ls
