@@ -4,4 +4,4 @@ curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
 rustup default stable
-rustup component add rustfmt clippy
+rustup component add rustfmt clippy rls
