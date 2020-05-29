@@ -3,3 +3,9 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias sd='systemctl'
+alias mixes=' \
+    mix test \
+    && mix format \
+    && mix credo --strict \
+    && mix coveralls -u \
+' # thanks @brosquinha
