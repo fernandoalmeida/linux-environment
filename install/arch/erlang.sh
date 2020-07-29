@@ -1,3 +1,3 @@
 #!/bin/bash -e
 
-sudo pacman -Sy erlang
+sudo pacman -Sy erlang rebar
