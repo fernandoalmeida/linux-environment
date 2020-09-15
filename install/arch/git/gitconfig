@@ -15,5 +15,3 @@
 	excludesfile = /home/fernando/.gitignore_global
 [push]
 	default = matching
-[commit]
-	template = /home/fernando/.commit-template
