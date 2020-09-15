@@ -41,6 +41,7 @@ arch/gigalixir: arch/python
 arch/jupyter: arch/python
 arch/kubernetes: arch/aura arch/virtualbox
 arch/lsp-bash: arch/node
+arch/lsp-docker: arch/node
 arch/lsp-elixir: arch/aura
 arch/node: arch/aura
 arch/pytorch: arch/python
