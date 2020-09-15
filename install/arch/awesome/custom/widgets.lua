@@ -43,7 +43,6 @@ for s = 1, screen.count() do
    right_layout:add(battery_widget())
    right_layout:add(date_widget())
    right_layout:add(time_widget(" BR: ", 0))
-   right_layout:add(time_widget(" UK: ", 3))
    right_layout:add(layoutbox_widget(s))
 
     local layout = wibox.layout.align.horizontal()
