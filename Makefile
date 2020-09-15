@@ -31,6 +31,7 @@ debian/react-native: debian/nodejs debian/android
 # implicit rules mapped to installation scripts
 arch/android: arch/aura
 arch/awesome: arch/bash arch/lua arch/imagemagick arch/rofi
+arch/azure: arch/aura
 arch/bash: arch/aura
 arch/dropbox: arch/wget
 arch/elixir: arch/git arch/erlang
