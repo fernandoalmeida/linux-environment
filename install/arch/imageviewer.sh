@@ -1,3 +1,3 @@
 #!/bin/bash -e
 
-sudo aura -A fim
+sudo pacman -Sy mcomix
