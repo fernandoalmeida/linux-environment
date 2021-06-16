@@ -2,7 +2,7 @@
 
 sudo aura -A asdf-vm
 
-ln -sf /opt/asdf-vm/asdf.sh $HOME/.bashrc.d/utils/
+ln -sf $(pwd)/install/arch/asdf/asdfrc $HOME/.bashrc.d/custom/
 source /opt/asdf-vm/asdf.sh
 
 asdf plugin-add erlang
