@@ -38,6 +38,7 @@ arch/elixir: arch/git arch/erlang
 arch/emacs: arch/bash arch/git arch/ssh arch/ag arch/aspell
 arch/exercism: arch/aura
 arch/gigalixir: arch/python
+arch/quill: arch/aura
 arch/jupyter: arch/python
 arch/kubernetes: arch/aura arch/virtualbox
 arch/lsp-bash: arch/node
