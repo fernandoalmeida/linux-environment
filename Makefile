@@ -30,7 +30,7 @@ debian/react-native: debian/nodejs debian/android
 
 # implicit rules mapped to installation scripts
 arch/android: arch/aura
-arch/awesome: arch/bash arch/lua arch/imagemagick arch/rofi
+arch/awesome: arch/lua arch/bash arch/rofi arch/filemanager arch/imageviewer arch/pdfviewer arch/screenshot
 arch/azure: arch/aura
 arch/bash: arch/aura
 arch/dropbox: arch/wget
