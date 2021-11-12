@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
-curl https://sh.rustup.rs -sSf | sh
-source $HOME/.cargo/env
+sudo pacman -Syy rustup
 
 rustup default stable
 rustup component add rustfmt clippy rls
