@@ -20,9 +20,8 @@ names  = { " web ", " dev ", " term ", " chat ", " play ", " other " }
 layouts = {
    awful.layout.suit.max,
    awful.layout.suit.floating,
-   awful.layout.suit.fair,
    awful.layout.suit.tile,
-   awful.layout.suit.tile.top,
+   awful.layout.suit.fair
 }
 
 tags = {}
