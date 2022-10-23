@@ -18,3 +18,4 @@ TAGS
 # Elixir
 .elixir_ls
 /**/cover/
+.iex.exs

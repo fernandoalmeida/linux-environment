@@ -1,6 +1,8 @@
 #!/bin/bash -e
 
 sudo aura -A vanta-agent
+sudo ln -sf /var/vanta/vanta-cli /usr/bin/vanta-cli
+
 
 echo -e "\033[32m"
 echo -e "================================================="

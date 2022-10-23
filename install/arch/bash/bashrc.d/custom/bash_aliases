@@ -9,3 +9,90 @@ alias mixes=' \
     && mix credo --strict \
     && mix coveralls -u \
 ' # thanks @brosquinha
+
+alias workera-run-website='\
+cd ~/code/workera/workera-dev-workspace/src/frontend/workera-website && \
+nvm use && \
+BASE_URL=http://app-local.deeplearningtest.org \
+FRONTEND_URL=http://local.deeplearningtest.org \
+yarn dev \
+'
+
+alias workera-run-candidates='\
+cd ~/code/workera/workera-dev-workspace/src/frontend/candidates-dashboard && \
+nvm use && \
+BASE_URL=http://app-local.deeplearningtest.org \
+FRONTEND_URL=http://local.deeplearningtest.org \
+GOOGLE_RECAPTCHA_SITE_KEY=$(cat ../../../vars_local/env-frontend | grep  GOOGLE_RECAPTCHA_SITE_KEY | cut -d "=" -f2-) \
+yarn dev \
+'
+
+alias workera-run-enterprise='\
+cd ~/code/workera/workera-dev-workspace/src/frontend/workera-enterprise && \
+nvm use && \
+REACT_APP_LOGIN_URL=http://local.deeplearningtest.org/candidates/login/ \
+REACT_APP_API_BASE_URL=http://app-local.deeplearningtest.org/ \
+REACT_APP_BASE_PATH=/app/enterprise \
+PORT=3030 \
+yarn start \
+'
+
+alias workera-run-backend='\
+cd ~/code/workera/workera-dev-workspace/src/backend/mlp_backend && \
+DJANGO_SETTINGS_MODULE=mlp_backend.settings.dev python manage.py runserver \
+'
+
+alias workera-create-backend-user='\
+cd ~/code/workera/workera-dev-workspace/src/backend/mlp_backend && \
+DJANGO_SETTINGS_MODULE=mlp_backend.settings.dev python manage.py createsuperuser \
+'
+
+alias workera-run-backend-migrate='\
+cd ~/code/workera/workera-dev-workspace/src/backend/mlp_backend && \
+DJANGO_SETTINGS_MODULE=mlp_backend.settings.dev python manage.py migrate \
+'
+
+alias workera-run-rpc-consumer='\
+cd ~/code/workera/workera-dev-workspace/src/backend/mlp_backend && \
+DJANGO_SETTINGS_MODULE=mlp_backend.settings.dev python manage.py launch_pika_upskilling \
+'
+
+alias workera-run-dockers='\
+cd ~/code/workera/workera-dev-workspace && \
+docker-compose -f docker-compose-linux.yml up nginx aws-local-endpoint db rabbitmq \
+'
+
+alias workera-run-learner='\
+cd ~/code/workera/workera-dev-workspace/src/frontend-learner && \
+nvm use && \
+REACT_APP_VERSION=0.1.0 \
+REACT_APP_API_BASE_URL=http://app-local.deeplearningtest.org/ \
+REACT_APP_BASE_PATH=/app/learner \
+REACT_APP_BASE_URL=http://local.deeplearningtest.org \
+PORT=3005 \
+yarn start
+'
+
+alias workera-run-elixir-dockers='cd ~/code/workera/workera_admin && docker-compose up'
+alias workera-run-elixir='cd ~/code/workera/workera_admin && iex -S mix phx.server'
+
+alias workera-update-db='\
+cd ~/code/workera/workera-dev-workspace && \
+echo "INFO: Update AWS credentials before continue on https://workera.awsapps.com/start" && \
+echo "Press <Enter> to continue..." && \
+read && \
+aws s3 cp s3://workera-secret-files-dev/vars_local/ ./vars_local/ --recursive && \
+aws s3 cp s3://workera-secret-files-dev/db/backend.sql ./src/db/backend.sql && \
+aws s3 cp s3://workera-secret-files-dev/db/backend_noanon.sql ./src/db/backend_noanon.sql && \
+aws s3 cp s3://workera-secret-files-dev/db/odoo.sql ./src/db/odoo.sql && \
+psql -h localhost -p 6543 -U postgres -W -c "DROP DATABASE IF EXISTS backend" && \
+psql -h localhost -p 6543 -U postgres -W -c "CREATE DATABASE backend" && \
+time pg_restore -h localhost -p 6543 -U postgres -d backend < src/db/backend.sql
+'
+
+alias workera-reset-db='\
+cd ~/code/workera/workera-dev-workspace && \
+psql -h localhost -p 6543 -U postgres -W -c "DROP DATABASE IF EXISTS backend" && \
+psql -h localhost -p 6543 -U postgres -W -c "CREATE DATABASE backend" && \
+time pg_restore -h localhost -p 6543 -U postgres -d backend < src/db/backend.sql
+'

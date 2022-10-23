@@ -9,10 +9,6 @@ if [[ -n "$PS1" ]]; then
         CDPATH+=":$group";
     done
 
-    for customer in `ls -d $projects/brainn/*/`; do
-        CDPATH+=":$customer";
-    done
-
     shopt -s autocd
     shopt -s cdspell
 
