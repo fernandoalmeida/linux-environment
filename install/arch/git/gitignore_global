@@ -15,3 +15,5 @@ tramp
 .log/ti-*.log
 
 .elixir_ls
+
+TAGS
