@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt-get install -y rxvt-unicode
+sudo apt-get install -y rxvt-unicode ncurses-term 
 
 if [[ -d $HOME/.bashrc.d ]]; then
     mv $HOME/.bashrc.d{,.bkp-$(date --iso-8601=seconds)}
