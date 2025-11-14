@@ -11,3 +11,4 @@ tramp
 .org-id-locations
 *_archive
 .dir-locals.el
+/.claude/
