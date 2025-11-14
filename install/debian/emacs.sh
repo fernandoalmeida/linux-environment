@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-: ${EMACS_DOTFILES:='https://github.com/fernandoalmeida/.emacs.d.git'}
+: ${EMACS_DOTFILES:='https://github.com/fernandoalmeida/emacs.d.git'}
 
 sudo apt-get install -qqy emacs
 
