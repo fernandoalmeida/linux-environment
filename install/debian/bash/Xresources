@@ -18,7 +18,7 @@ URxvt.lineSpace: 0
 
 ! Fonts
 URxvt.allow_bold: false
-URxvt.font: xft:DejaVuSansMono:size=8.5
+URxvt.font: xft:DejaVuSansMono:size=12
 
 ! Fix font space
 ! URxvt*letterSpace: -1
@@ -46,7 +46,7 @@ URxvt.secondaryWheel: 1
 
 ! Default browser
 URxvt.matcher.button: 1
-URxvt.urlLauncher: conkeror
+URxvt.urlLauncher: firefox
 
 ! Cursor
 URxvt.cursorBlink: true
