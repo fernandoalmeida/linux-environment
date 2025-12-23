@@ -12,3 +12,4 @@ tramp
 *_archive
 .dir-locals.el
 /.claude/
+.expert
