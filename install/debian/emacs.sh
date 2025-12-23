@@ -4,7 +4,11 @@
 
 sudo apt-get install -qqy emacs
 
-ln -sfn $(pwd)/install/bash/bashrc.d/emacs $HOME/.bashrc.d/
+pushd $(mktemp -d)
+  wget -qO emacs-lsp-booster.zip https://github.com/blahgeek/emacs-lsp-booster/releases/download/v0.2.1/emacs-lsp-booster_v0.2.1_x86_64-unknown-linux-musl.zip
+  unzip emacs-lsp-booster.zip
+  mv emacs-lsp-booster $HOME/.local/bin/
+popd
 
 # download and configure my Emacs dotfiles
 if [ ! -d $HOME/.emacs.d ] ; then
