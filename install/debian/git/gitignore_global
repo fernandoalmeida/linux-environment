@@ -11,5 +11,10 @@ tramp
 .org-id-locations
 *_archive
 .dir-locals.el
-/.claude/
+.claude/settings.local.json
+.log/tsserver.log
+.log/ti-*.log
+.elixir_ls
 .expert
+TAGS
+.lexical
